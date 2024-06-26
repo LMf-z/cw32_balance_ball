@@ -1,0 +1,2184 @@
+Component: Arm Compiler for Embedded 6.21 Tool: armlink [5ec1fa00]
+
+==============================================================================
+
+Section Cross References
+
+    system_cw32f003.o(.text.SystemCoreClockUpdate) refers to system_cw32f003.o(.data.SystemCoreClock) for SystemCoreClock
+    system_cw32f003.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_cw32f003.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    system_cw32f003.o(.text.SystemInit) refers to system_cw32f003.o(.data.SystemCoreClock) for SystemCoreClock
+    system_cw32f003.o(.ARM.exidx.text.SystemInit) refers to system_cw32f003.o(.text.SystemInit) for [Anonymous Symbol]
+    system_cw32f003.o(.ARM.exidx.text.FirmwareDelay) refers to system_cw32f003.o(.text.FirmwareDelay) for [Anonymous Symbol]
+    system_cw32f003.o(.text.MemClr) refers to memseta.o(.text) for __aeabi_memclr
+    system_cw32f003.o(.ARM.exidx.text.MemClr) refers to system_cw32f003.o(.text.MemClr) for [Anonymous Symbol]
+    startup_cw32f003.o(RESET) refers to startup_cw32f003.o(STACK) for __initial_sp
+    startup_cw32f003.o(RESET) refers to startup_cw32f003.o(.text) for Reset_Handler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.NMI_Handler) for NMI_Handler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.HardFault_Handler) for HardFault_Handler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.SVC_Handler) for SVC_Handler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.PendSV_Handler) for PendSV_Handler
+    startup_cw32f003.o(RESET) refers to cw32f003_systick.o(.text.SysTick_Handler) for SysTick_Handler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.WDT_IRQHandler) for WDT_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.LVD_IRQHandler) for LVD_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.FLASHRAM_IRQHandler) for FLASHRAM_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.SYSCTRL_IRQHandler) for SYSCTRL_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.GPIOA_IRQHandler) for GPIOA_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.GPIOB_IRQHandler) for GPIOB_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.GPIOC_IRQHandler) for GPIOC_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.ADC_IRQHandler) for ADC_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.ATIM_IRQHandler) for ATIM_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.VC1_IRQHandler) for VC1_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.VC2_IRQHandler) for VC2_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.GTIM_IRQHandler) for GTIM_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.BTIM1_IRQHandler) for BTIM1_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.BTIM2_IRQHandler) for BTIM2_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.BTIM3_IRQHandler) for BTIM3_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.I2C_IRQHandler) for I2C_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.SPI_IRQHandler) for SPI_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.UART1_IRQHandler) for UART1_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.UART2_IRQHandler) for UART2_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(.text.AWT_IRQHandler) for AWT_IRQHandler
+    startup_cw32f003.o(.text) refers to system_cw32f003.o(.text.SystemInit) for SystemInit
+    startup_cw32f003.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    cw32f003_adc.o(.ARM.exidx.text.ADC_GetITStatusAll) refers to cw32f003_adc.o(.text.ADC_GetITStatusAll) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_GetITStatus) refers to cw32f003_adc.o(.text.ADC_GetITStatus) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_ClearITPendingAll) refers to cw32f003_adc.o(.text.ADC_ClearITPendingAll) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_ClearITPendingBit) refers to cw32f003_adc.o(.text.ADC_ClearITPendingBit) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_EnableIrq) refers to cw32f003_adc.o(.text.ADC_EnableIrq) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_EnableNvic) refers to cw32f003_adc.o(.text.ADC_EnableNvic) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_DisableIrq) refers to cw32f003_adc.o(.text.ADC_DisableIrq) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_DisableNvic) refers to cw32f003_adc.o(.text.ADC_DisableNvic) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_WdtConfig) refers to cw32f003_adc.o(.text.ADC_WdtConfig) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_Init) refers to cw32f003_adc.o(.text.ADC_Init) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_StructInit) refers to cw32f003_adc.o(.text.ADC_StructInit) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_WdtInit) refers to cw32f003_adc.o(.text.ADC_WdtInit) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_ExtTrigCfg) refers to cw32f003_adc.o(.text.ADC_ExtTrigCfg) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_DeInit) refers to cw32f003_adc.o(.text.ADC_DeInit) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_SoftwareStartConvCmd) refers to cw32f003_adc.o(.text.ADC_SoftwareStartConvCmd) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_Enable) refers to cw32f003_adc.o(.text.ADC_Enable) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_Disable) refers to cw32f003_adc.o(.text.ADC_Disable) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_SingleChCommon) refers to cw32f003_adc.o(.text.ADC_SingleChCommon) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_BufEnSingleCh) refers to cw32f003_adc.o(.text.ADC_BufEnSingleCh) for [Anonymous Symbol]
+    cw32f003_adc.o(.text.ADC_SingleChOneModeCfg) refers to cw32f003_adc.o(.text.ADC_SingleChCommon) for ADC_SingleChCommon
+    cw32f003_adc.o(.ARM.exidx.text.ADC_SingleChOneModeCfg) refers to cw32f003_adc.o(.text.ADC_SingleChOneModeCfg) for [Anonymous Symbol]
+    cw32f003_adc.o(.text.ADC_SingleChMoreModeCfg) refers to cw32f003_adc.o(.text.ADC_SingleChCommon) for ADC_SingleChCommon
+    cw32f003_adc.o(.ARM.exidx.text.ADC_SingleChMoreModeCfg) refers to cw32f003_adc.o(.text.ADC_SingleChMoreModeCfg) for [Anonymous Symbol]
+    cw32f003_adc.o(.text.ADC_SingleChContinuousModeCfg) refers to cw32f003_adc.o(.text.ADC_SingleChCommon) for ADC_SingleChCommon
+    cw32f003_adc.o(.ARM.exidx.text.ADC_SingleChContinuousModeCfg) refers to cw32f003_adc.o(.text.ADC_SingleChContinuousModeCfg) for [Anonymous Symbol]
+    cw32f003_adc.o(.text.ADC_SerialChCommon) refers to cw32f003_adc.o(.text.ADC_Sqr02ChannelCfg) for ADC_Sqr02ChannelCfg
+    cw32f003_adc.o(.text.ADC_SerialChCommon) refers to cw32f003_adc.o(.text.ADC_Sqr03ChannelCfg) for ADC_Sqr03ChannelCfg
+    cw32f003_adc.o(.ARM.exidx.text.ADC_SerialChCommon) refers to cw32f003_adc.o(.text.ADC_SerialChCommon) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_Sqr0ChannelCfg) refers to cw32f003_adc.o(.text.ADC_Sqr0ChannelCfg) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_Sqr01ChannelCfg) refers to cw32f003_adc.o(.text.ADC_Sqr01ChannelCfg) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_Sqr02ChannelCfg) refers to cw32f003_adc.o(.text.ADC_Sqr02ChannelCfg) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_Sqr03ChannelCfg) refers to cw32f003_adc.o(.text.ADC_Sqr03ChannelCfg) for [Anonymous Symbol]
+    cw32f003_adc.o(.text.ADC_SerialChContinuousModeCfg) refers to cw32f003_adc.o(.text.ADC_SerialChCommon) for ADC_SerialChCommon
+    cw32f003_adc.o(.ARM.exidx.text.ADC_SerialChContinuousModeCfg) refers to cw32f003_adc.o(.text.ADC_SerialChContinuousModeCfg) for [Anonymous Symbol]
+    cw32f003_adc.o(.text.ADC_SerialChScanModeCfg) refers to cw32f003_adc.o(.text.ADC_SerialChCommon) for ADC_SerialChCommon
+    cw32f003_adc.o(.ARM.exidx.text.ADC_SerialChScanModeCfg) refers to cw32f003_adc.o(.text.ADC_SerialChScanModeCfg) for [Anonymous Symbol]
+    cw32f003_adc.o(.text.ADC_SerialChMoreModeCfg) refers to cw32f003_adc.o(.text.ADC_SerialChCommon) for ADC_SerialChCommon
+    cw32f003_adc.o(.ARM.exidx.text.ADC_SerialChMoreModeCfg) refers to cw32f003_adc.o(.text.ADC_SerialChMoreModeCfg) for [Anonymous Symbol]
+    cw32f003_adc.o(.text.ADC_SerialChBreakModeCfg) refers to cw32f003_adc.o(.text.ADC_SerialChCommon) for ADC_SerialChCommon
+    cw32f003_adc.o(.ARM.exidx.text.ADC_SerialChBreakModeCfg) refers to cw32f003_adc.o(.text.ADC_SerialChBreakModeCfg) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_BufEnSerialCh) refers to cw32f003_adc.o(.text.ADC_BufEnSerialCh) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_GetConversionValue) refers to cw32f003_adc.o(.text.ADC_GetConversionValue) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_GetSqr0Result) refers to cw32f003_adc.o(.text.ADC_GetSqr0Result) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_GetSqr1Result) refers to cw32f003_adc.o(.text.ADC_GetSqr1Result) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_GetSqr2Result) refers to cw32f003_adc.o(.text.ADC_GetSqr2Result) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_GetSqr3Result) refers to cw32f003_adc.o(.text.ADC_GetSqr3Result) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_GetAccResult) refers to cw32f003_adc.o(.text.ADC_GetAccResult) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_ClrAccResult) refers to cw32f003_adc.o(.text.ADC_ClrAccResult) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_SetVref) refers to cw32f003_adc.o(.text.ADC_SetVref) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_SetAlign) refers to cw32f003_adc.o(.text.ADC_SetAlign) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_SetDiscard) refers to cw32f003_adc.o(.text.ADC_SetDiscard) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_SetTs) refers to cw32f003_adc.o(.text.ADC_SetTs) for [Anonymous Symbol]
+    cw32f003_adc.o(.text.ADC_GetTsVref1V5) refers to ffltui.o(.text) for __aeabi_ui2f
+    cw32f003_adc.o(.text.ADC_GetTsVref1V5) refers to fmul.o(.text) for __aeabi_fmul
+    cw32f003_adc.o(.text.ADC_GetTsVref1V5) refers to fflti.o(.text) for __aeabi_i2f
+    cw32f003_adc.o(.text.ADC_GetTsVref1V5) refers to fadd.o(.text) for __aeabi_fadd
+    cw32f003_adc.o(.ARM.exidx.text.ADC_GetTsVref1V5) refers to cw32f003_adc.o(.text.ADC_GetTsVref1V5) for [Anonymous Symbol]
+    cw32f003_adc.o(.text.ADC_GetTsVref2V5) refers to ffltui.o(.text) for __aeabi_ui2f
+    cw32f003_adc.o(.text.ADC_GetTsVref2V5) refers to fmul.o(.text) for __aeabi_fmul
+    cw32f003_adc.o(.text.ADC_GetTsVref2V5) refers to fflti.o(.text) for __aeabi_i2f
+    cw32f003_adc.o(.text.ADC_GetTsVref2V5) refers to fadd.o(.text) for __aeabi_fadd
+    cw32f003_adc.o(.ARM.exidx.text.ADC_GetTsVref2V5) refers to cw32f003_adc.o(.text.ADC_GetTsVref2V5) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_AutoStop) refers to cw32f003_adc.o(.text.ADC_AutoStop) for [Anonymous Symbol]
+    cw32f003_adc.o(.ARM.exidx.text.ADC_ITConfig) refers to cw32f003_adc.o(.text.ADC_ITConfig) for [Anonymous Symbol]
+    cw32f003_awt.o(.ARM.exidx.text.AWT_DeInit) refers to cw32f003_awt.o(.text.AWT_DeInit) for [Anonymous Symbol]
+    cw32f003_awt.o(.ARM.exidx.text.AWT_TimeCntInit) refers to cw32f003_awt.o(.text.AWT_TimeCntInit) for [Anonymous Symbol]
+    cw32f003_awt.o(.ARM.exidx.text.AWT_TimeCntStructInit) refers to cw32f003_awt.o(.text.AWT_TimeCntStructInit) for [Anonymous Symbol]
+    cw32f003_awt.o(.ARM.exidx.text.AWT_Cmd) refers to cw32f003_awt.o(.text.AWT_Cmd) for [Anonymous Symbol]
+    cw32f003_awt.o(.ARM.exidx.text.AWT_ITConfig) refers to cw32f003_awt.o(.text.AWT_ITConfig) for [Anonymous Symbol]
+    cw32f003_awt.o(.ARM.exidx.text.AWT_GetITStatus) refers to cw32f003_awt.o(.text.AWT_GetITStatus) for [Anonymous Symbol]
+    cw32f003_awt.o(.ARM.exidx.text.AWT_ClearITPendingBit) refers to cw32f003_awt.o(.text.AWT_ClearITPendingBit) for [Anonymous Symbol]
+    cw32f003_awt.o(.ARM.exidx.text.AWT_ClkSourceConfig) refers to cw32f003_awt.o(.text.AWT_ClkSourceConfig) for [Anonymous Symbol]
+    cw32f003_awt.o(.ARM.exidx.text.AWT_PrescalerConfig) refers to cw32f003_awt.o(.text.AWT_PrescalerConfig) for [Anonymous Symbol]
+    cw32f003_awt.o(.ARM.exidx.text.AWT_GetCounter) refers to cw32f003_awt.o(.text.AWT_GetCounter) for [Anonymous Symbol]
+    cw32f003_awt.o(.ARM.exidx.text.AWT_GetAutoreload) refers to cw32f003_awt.o(.text.AWT_GetAutoreload) for [Anonymous Symbol]
+    cw32f003_awt.o(.ARM.exidx.text.AWT_GetClkSource) refers to cw32f003_awt.o(.text.AWT_GetClkSource) for [Anonymous Symbol]
+    cw32f003_awt.o(.ARM.exidx.text.AWT_GetPrescaler) refers to cw32f003_awt.o(.text.AWT_GetPrescaler) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_DeInit) refers to cw32f003_btim.o(.text.BTIM_DeInit) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_TimeBaseInit) refers to cw32f003_btim.o(.text.BTIM_TimeBaseInit) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_TimeBaseStructInit) refers to cw32f003_btim.o(.text.BTIM_TimeBaseStructInit) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_Cmd) refers to cw32f003_btim.o(.text.BTIM_Cmd) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_ITConfig) refers to cw32f003_btim.o(.text.BTIM_ITConfig) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_PrescalerConfig) refers to cw32f003_btim.o(.text.BTIM_PrescalerConfig) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_ModeConfig) refers to cw32f003_btim.o(.text.BTIM_ModeConfig) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_SelectInputTrigger) refers to cw32f003_btim.o(.text.BTIM_SelectInputTrigger) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_SelectETRInputPolarity) refers to cw32f003_btim.o(.text.BTIM_SelectETRInputPolarity) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_SelectOnePulseMode) refers to cw32f003_btim.o(.text.BTIM_SelectOnePulseMode) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_OutputToggleCmd) refers to cw32f003_btim.o(.text.BTIM_OutputToggleCmd) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_ETRConfig) refers to cw32f003_btim.o(.text.BTIM_ETRConfig) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_SetCounter) refers to cw32f003_btim.o(.text.BTIM_SetCounter) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_SetAutoreload) refers to cw32f003_btim.o(.text.BTIM_SetAutoreload) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_GetCounter) refers to cw32f003_btim.o(.text.BTIM_GetCounter) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_GetAutoreload) refers to cw32f003_btim.o(.text.BTIM_GetAutoreload) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_GetPrescaler) refers to cw32f003_btim.o(.text.BTIM_GetPrescaler) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_GetITStatus) refers to cw32f003_btim.o(.text.BTIM_GetITStatus) for [Anonymous Symbol]
+    cw32f003_btim.o(.ARM.exidx.text.BTIM_ClearITPendingBit) refers to cw32f003_btim.o(.text.BTIM_ClearITPendingBit) for [Anonymous Symbol]
+    cw32f003_crc.o(.ARM.exidx.text.CRC16_Calc_8bit) refers to cw32f003_crc.o(.text.CRC16_Calc_8bit) for [Anonymous Symbol]
+    cw32f003_debug.o(.ARM.exidx.text.DBGMCU_Config) refers to cw32f003_debug.o(.text.DBGMCU_Config) for [Anonymous Symbol]
+    cw32f003_digitalsign.o(.ARM.exidx.text.DIGITALSIGN_GetChipType) refers to cw32f003_digitalsign.o(.text.DIGITALSIGN_GetChipType) for [Anonymous Symbol]
+    cw32f003_digitalsign.o(.ARM.exidx.text.DIGITALSIGN_GetPinCount) refers to cw32f003_digitalsign.o(.text.DIGITALSIGN_GetPinCount) for [Anonymous Symbol]
+    cw32f003_digitalsign.o(.ARM.exidx.text.DIGITALSIGN_GetFlashSize) refers to cw32f003_digitalsign.o(.text.DIGITALSIGN_GetFlashSize) for [Anonymous Symbol]
+    cw32f003_digitalsign.o(.ARM.exidx.text.DIGITALSIGN_GetRamSize) refers to cw32f003_digitalsign.o(.text.DIGITALSIGN_GetRamSize) for [Anonymous Symbol]
+    cw32f003_digitalsign.o(.ARM.exidx.text.DIGITALSIGN_GetChipUid) refers to cw32f003_digitalsign.o(.text.DIGITALSIGN_GetChipUid) for [Anonymous Symbol]
+    cw32f003_flash.o(.ARM.exidx.text.FLASH_SetLatency) refers to cw32f003_flash.o(.text.FLASH_SetLatency) for [Anonymous Symbol]
+    cw32f003_flash.o(.ARM.exidx.text.FLASH_GetReadOutLevel) refers to cw32f003_flash.o(.text.FLASH_GetReadOutLevel) for [Anonymous Symbol]
+    cw32f003_flash.o(.ARM.exidx.text.FLASH_SetReadOutLevel) refers to cw32f003_flash.o(.text.FLASH_SetReadOutLevel) for [Anonymous Symbol]
+    cw32f003_flash.o(.ARM.exidx.text.FLASH_UnlockAllPages) refers to cw32f003_flash.o(.text.FLASH_UnlockAllPages) for [Anonymous Symbol]
+    cw32f003_flash.o(.ARM.exidx.text.FLASH_LockAllPages) refers to cw32f003_flash.o(.text.FLASH_LockAllPages) for [Anonymous Symbol]
+    cw32f003_flash.o(.ARM.exidx.text.FLASH_UnlockPage) refers to cw32f003_flash.o(.text.FLASH_UnlockPage) for [Anonymous Symbol]
+    cw32f003_flash.o(.ARM.exidx.text.FLASH_UnlockPages) refers to cw32f003_flash.o(.text.FLASH_UnlockPages) for [Anonymous Symbol]
+    cw32f003_flash.o(.ARM.exidx.text.FLASH_ErasePage) refers to cw32f003_flash.o(.text.FLASH_ErasePage) for [Anonymous Symbol]
+    cw32f003_flash.o(.ARM.exidx.text.FLASH_ErasePages) refers to cw32f003_flash.o(.text.FLASH_ErasePages) for [Anonymous Symbol]
+    cw32f003_flash.o(.ARM.exidx.text.FLASH_WirteBytes) refers to cw32f003_flash.o(.text.FLASH_WirteBytes) for [Anonymous Symbol]
+    cw32f003_flash.o(.ARM.exidx.text.FLASH_LockPage) refers to cw32f003_flash.o(.text.FLASH_LockPage) for [Anonymous Symbol]
+    cw32f003_flash.o(.ARM.exidx.text.FLASH_LockPages) refers to cw32f003_flash.o(.text.FLASH_LockPages) for [Anonymous Symbol]
+    cw32f003_flash.o(.ARM.exidx.text.FLASH_ITConfig) refers to cw32f003_flash.o(.text.FLASH_ITConfig) for [Anonymous Symbol]
+    cw32f003_flash.o(.ARM.exidx.text.FLASH_GetITStatus) refers to cw32f003_flash.o(.text.FLASH_GetITStatus) for [Anonymous Symbol]
+    cw32f003_flash.o(.ARM.exidx.text.FLASH_ClearITPendingBit) refers to cw32f003_flash.o(.text.FLASH_ClearITPendingBit) for [Anonymous Symbol]
+    cw32f003_flash.o(.ARM.exidx.text.FLASH_GetStatus) refers to cw32f003_flash.o(.text.FLASH_GetStatus) for [Anonymous Symbol]
+    cw32f003_gpio.o(.ARM.exidx.text.GPIO_Init) refers to cw32f003_gpio.o(.text.GPIO_Init) for [Anonymous Symbol]
+    cw32f003_gpio.o(.ARM.exidx.text.GPIO_DeInit) refers to cw32f003_gpio.o(.text.GPIO_DeInit) for [Anonymous Symbol]
+    cw32f003_gpio.o(.ARM.exidx.text.GPIO_ReadPin) refers to cw32f003_gpio.o(.text.GPIO_ReadPin) for [Anonymous Symbol]
+    cw32f003_gpio.o(.ARM.exidx.text.GPIO_WritePin) refers to cw32f003_gpio.o(.text.GPIO_WritePin) for [Anonymous Symbol]
+    cw32f003_gpio.o(.ARM.exidx.text.GPIO_TogglePin) refers to cw32f003_gpio.o(.text.GPIO_TogglePin) for [Anonymous Symbol]
+    cw32f003_gpio.o(.ARM.exidx.text.GPIO_SWD2GPIO) refers to cw32f003_gpio.o(.text.GPIO_SWD2GPIO) for [Anonymous Symbol]
+    cw32f003_gpio.o(.ARM.exidx.text.GPIO_GPIO2SWD) refers to cw32f003_gpio.o(.text.GPIO_GPIO2SWD) for [Anonymous Symbol]
+    cw32f003_gpio.o(.ARM.exidx.text.GPIO_NRST2GPIO) refers to cw32f003_gpio.o(.text.GPIO_NRST2GPIO) for [Anonymous Symbol]
+    cw32f003_gpio.o(.ARM.exidx.text.GPIO_GPIO2NRST) refers to cw32f003_gpio.o(.text.GPIO_GPIO2NRST) for [Anonymous Symbol]
+    cw32f003_gpio.o(.ARM.exidx.text.GPIO_ConfigFilter) refers to cw32f003_gpio.o(.text.GPIO_ConfigFilter) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_DeInit) refers to cw32f003_gtim.o(.text.GTIM_DeInit) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_TimeBaseInit) refers to cw32f003_gtim.o(.text.GTIM_TimeBaseInit) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_EncodeInit) refers to cw32f003_gtim.o(.text.GTIM_EncodeInit) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_OCInit) refers to cw32f003_gtim.o(.text.GTIM_OCInit) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_ICInit) refers to cw32f003_gtim.o(.text.GTIM_ICInit) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_Cmd) refers to cw32f003_gtim.o(.text.GTIM_Cmd) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_ETRConfig) refers to cw32f003_gtim.o(.text.GTIM_ETRConfig) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_ITRConfig) refers to cw32f003_gtim.o(.text.GTIM_ITRConfig) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_ICChannelConfig) refers to cw32f003_gtim.o(.text.GTIM_ICChannelConfig) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_SetPrescaler) refers to cw32f003_gtim.o(.text.GTIM_SetPrescaler) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_SetReloadValue) refers to cw32f003_gtim.o(.text.GTIM_SetReloadValue) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_SetCounterValue) refers to cw32f003_gtim.o(.text.GTIM_SetCounterValue) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_SetCompare1) refers to cw32f003_gtim.o(.text.GTIM_SetCompare1) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_SetCompare2) refers to cw32f003_gtim.o(.text.GTIM_SetCompare2) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_SetCompare3) refers to cw32f003_gtim.o(.text.GTIM_SetCompare3) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_SetCompare4) refers to cw32f003_gtim.o(.text.GTIM_SetCompare4) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_GetCapture1) refers to cw32f003_gtim.o(.text.GTIM_GetCapture1) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_GetCapture2) refers to cw32f003_gtim.o(.text.GTIM_GetCapture2) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_GetCapture3) refers to cw32f003_gtim.o(.text.GTIM_GetCapture3) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_GetCapture4) refers to cw32f003_gtim.o(.text.GTIM_GetCapture4) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_ITConfig) refers to cw32f003_gtim.o(.text.GTIM_ITConfig) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_GetITStatus) refers to cw32f003_gtim.o(.text.GTIM_GetITStatus) for [Anonymous Symbol]
+    cw32f003_gtim.o(.ARM.exidx.text.GTIM_ClearITPendingBit) refers to cw32f003_gtim.o(.text.GTIM_ClearITPendingBit) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_BaudGeneratorEnable) refers to cw32f003_i2c.o(.text.I2C_BaudGeneratorEnable) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_SetBaud) refers to cw32f003_i2c.o(.text.I2C_SetBaud) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_GenerateSTART) refers to cw32f003_i2c.o(.text.I2C_GenerateSTART) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_GenerateSTOP) refers to cw32f003_i2c.o(.text.I2C_GenerateSTOP) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_AcknowledgeConfig) refers to cw32f003_i2c.o(.text.I2C_AcknowledgeConfig) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_FilterConfig) refers to cw32f003_i2c.o(.text.I2C_FilterConfig) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_SetOwnSlaveAddress0) refers to cw32f003_i2c.o(.text.I2C_SetOwnSlaveAddress0) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_SetOwnSlaveAddress1) refers to cw32f003_i2c.o(.text.I2C_SetOwnSlaveAddress1) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_SetOwnSlaveAddress2) refers to cw32f003_i2c.o(.text.I2C_SetOwnSlaveAddress2) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_GcConfig) refers to cw32f003_i2c.o(.text.I2C_GcConfig) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_Cmd) refers to cw32f003_i2c.o(.text.I2C_Cmd) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_GetIrq) refers to cw32f003_i2c.o(.text.I2C_GetIrq) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_ClearIrq) refers to cw32f003_i2c.o(.text.I2C_ClearIrq) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_GetState) refers to cw32f003_i2c.o(.text.I2C_GetState) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_Master_Init) refers to cw32f003_i2c.o(.text.I2C_Master_Init) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_Slave_Init) refers to cw32f003_i2c.o(.text.I2C_Slave_Init) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_DeInit) refers to cw32f003_i2c.o(.text.I2C_DeInit) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_SendData) refers to cw32f003_i2c.o(.text.I2C_SendData) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_ReceiveData) refers to cw32f003_i2c.o(.text.I2C_ReceiveData) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_Send7bitAddress) refers to cw32f003_i2c.o(.text.I2C_Send7bitAddress) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_SoftwareResetCmd) refers to cw32f003_i2c.o(.text.I2C_SoftwareResetCmd) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_MasterReadEepomData) refers to cw32f003_i2c.o(.text.I2C_MasterReadEepomData) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_MasterWriteEepromData) refers to cw32f003_i2c.o(.text.I2C_MasterWriteEepromData) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_MasterRecDataFromSlave) refers to cw32f003_i2c.o(.text.I2C_MasterRecDataFromSlave) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_MasterSendDataToSlave) refers to cw32f003_i2c.o(.text.I2C_MasterSendDataToSlave) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_SlaveSendDataToMaster) refers to cw32f003_i2c.o(.text.I2C_SlaveSendDataToMaster) for [Anonymous Symbol]
+    cw32f003_i2c.o(.ARM.exidx.text.I2C_SlaveRecDataFromMaster) refers to cw32f003_i2c.o(.text.I2C_SlaveRecDataFromMaster) for [Anonymous Symbol]
+    cw32f003_iwdt.o(.ARM.exidx.text.IWDT_DeInit) refers to cw32f003_iwdt.o(.text.IWDT_DeInit) for [Anonymous Symbol]
+    cw32f003_iwdt.o(.ARM.exidx.text.IWDT_Init) refers to cw32f003_iwdt.o(.text.IWDT_Init) for [Anonymous Symbol]
+    cw32f003_iwdt.o(.ARM.exidx.text.IWDT_Cmd) refers to cw32f003_iwdt.o(.text.IWDT_Cmd) for [Anonymous Symbol]
+    cw32f003_iwdt.o(.ARM.exidx.text.IWDT_Refresh) refers to cw32f003_iwdt.o(.text.IWDT_Refresh) for [Anonymous Symbol]
+    cw32f003_iwdt.o(.ARM.exidx.text.IWDT_Unlock) refers to cw32f003_iwdt.o(.text.IWDT_Unlock) for [Anonymous Symbol]
+    cw32f003_iwdt.o(.ARM.exidx.text.IWDT_Lock) refers to cw32f003_iwdt.o(.text.IWDT_Lock) for [Anonymous Symbol]
+    cw32f003_iwdt.o(.ARM.exidx.text.IWDT_Stop) refers to cw32f003_iwdt.o(.text.IWDT_Stop) for [Anonymous Symbol]
+    cw32f003_iwdt.o(.ARM.exidx.text.IWDT_SetPrescaler) refers to cw32f003_iwdt.o(.text.IWDT_SetPrescaler) for [Anonymous Symbol]
+    cw32f003_iwdt.o(.ARM.exidx.text.IWDT_SetWindowValue) refers to cw32f003_iwdt.o(.text.IWDT_SetWindowValue) for [Anonymous Symbol]
+    cw32f003_iwdt.o(.ARM.exidx.text.IWDT_SetReloadValue) refers to cw32f003_iwdt.o(.text.IWDT_SetReloadValue) for [Anonymous Symbol]
+    cw32f003_iwdt.o(.ARM.exidx.text.IWDT_ITConfig) refers to cw32f003_iwdt.o(.text.IWDT_ITConfig) for [Anonymous Symbol]
+    cw32f003_iwdt.o(.ARM.exidx.text.IWDT_GetFlagStatus) refers to cw32f003_iwdt.o(.text.IWDT_GetFlagStatus) for [Anonymous Symbol]
+    cw32f003_iwdt.o(.ARM.exidx.text.IWDT_ClearOVFlag) refers to cw32f003_iwdt.o(.text.IWDT_ClearOVFlag) for [Anonymous Symbol]
+    cw32f003_iwdt.o(.ARM.exidx.text.IWDT_GetCounterValue) refers to cw32f003_iwdt.o(.text.IWDT_GetCounterValue) for [Anonymous Symbol]
+    cw32f003_lvd.o(.ARM.exidx.text.LVD_EnableNvic) refers to cw32f003_lvd.o(.text.LVD_EnableNvic) for [Anonymous Symbol]
+    cw32f003_lvd.o(.ARM.exidx.text.LVD_DisableNvic) refers to cw32f003_lvd.o(.text.LVD_DisableNvic) for [Anonymous Symbol]
+    cw32f003_lvd.o(.ARM.exidx.text.LVD_TrigConfig) refers to cw32f003_lvd.o(.text.LVD_TrigConfig) for [Anonymous Symbol]
+    cw32f003_lvd.o(.ARM.exidx.text.LVD_EnableIrq) refers to cw32f003_lvd.o(.text.LVD_EnableIrq) for [Anonymous Symbol]
+    cw32f003_lvd.o(.ARM.exidx.text.LVD_DisableIrq) refers to cw32f003_lvd.o(.text.LVD_DisableIrq) for [Anonymous Symbol]
+    cw32f003_lvd.o(.ARM.exidx.text.LVD_Init) refers to cw32f003_lvd.o(.text.LVD_Init) for [Anonymous Symbol]
+    cw32f003_lvd.o(.ARM.exidx.text.LVD_Disable) refers to cw32f003_lvd.o(.text.LVD_Disable) for [Anonymous Symbol]
+    cw32f003_lvd.o(.ARM.exidx.text.LVD_DeInit) refers to cw32f003_lvd.o(.text.LVD_DeInit) for [Anonymous Symbol]
+    cw32f003_lvd.o(.ARM.exidx.text.LVD_Enable) refers to cw32f003_lvd.o(.text.LVD_Enable) for [Anonymous Symbol]
+    cw32f003_lvd.o(.ARM.exidx.text.LVD_GetIrqStatus) refers to cw32f003_lvd.o(.text.LVD_GetIrqStatus) for [Anonymous Symbol]
+    cw32f003_lvd.o(.ARM.exidx.text.LVD_GetFlagStatus) refers to cw32f003_lvd.o(.text.LVD_GetFlagStatus) for [Anonymous Symbol]
+    cw32f003_lvd.o(.ARM.exidx.text.LVD_ClearIrq) refers to cw32f003_lvd.o(.text.LVD_ClearIrq) for [Anonymous Symbol]
+    cw32f003_lvd.o(.ARM.exidx.text.LVD_GetFilterResult) refers to cw32f003_lvd.o(.text.LVD_GetFilterResult) for [Anonymous Symbol]
+    cw32f003_pwr.o(.ARM.exidx.text.PWR_Config) refers to cw32f003_pwr.o(.text.PWR_Config) for [Anonymous Symbol]
+    cw32f003_pwr.o(.ARM.exidx.text.PWR_GotoLpmMode) refers to cw32f003_pwr.o(.text.PWR_GotoLpmMode) for [Anonymous Symbol]
+    cw32f003_ram.o(.ARM.exidx.text.RAM_ITConfig) refers to cw32f003_ram.o(.text.RAM_ITConfig) for [Anonymous Symbol]
+    cw32f003_ram.o(.ARM.exidx.text.RAM_GetITStatus) refers to cw32f003_ram.o(.text.RAM_GetITStatus) for [Anonymous Symbol]
+    cw32f003_ram.o(.ARM.exidx.text.RAM_ClearITPendingBit) refers to cw32f003_ram.o(.text.RAM_ClearITPendingBit) for [Anonymous Symbol]
+    cw32f003_ram.o(.ARM.exidx.text.RAM_GetErrorAddress) refers to cw32f003_ram.o(.text.RAM_GetErrorAddress) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_HCLKPRS_Config) refers to cw32f003_rcc.o(.text.RCC_HCLKPRS_Config) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_PCLKPRS_Config) refers to cw32f003_rcc.o(.text.RCC_PCLKPRS_Config) for [Anonymous Symbol]
+    cw32f003_rcc.o(.text.RCC_SYSCLKSRC_Config) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    cw32f003_rcc.o(.text.RCC_SYSCLKSRC_Config) refers to cw32f003_rcc.o(.rodata.hsiprs_tbl) for hsiprs_tbl
+    cw32f003_rcc.o(.text.RCC_SYSCLKSRC_Config) refers to system_cw32f003.o(.data.SystemCoreClock) for SystemCoreClock
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_SYSCLKSRC_Config) refers to cw32f003_rcc.o(.text.RCC_SYSCLKSRC_Config) for [Anonymous Symbol]
+    cw32f003_rcc.o(.text.RCC_SystemCoreClockUpdate) refers to system_cw32f003.o(.data.SystemCoreClock) for SystemCoreClock
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_SystemCoreClockUpdate) refers to cw32f003_rcc.o(.text.RCC_SystemCoreClockUpdate) for [Anonymous Symbol]
+    cw32f003_rcc.o(.text.RCC_Sysctrl_GetHClkFreq) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    cw32f003_rcc.o(.text.RCC_Sysctrl_GetHClkFreq) refers to cw32f003_rcc.o(.rodata.hsiprs_tbl) for hsiprs_tbl
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_Sysctrl_GetHClkFreq) refers to cw32f003_rcc.o(.text.RCC_Sysctrl_GetHClkFreq) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_CCS_Config) refers to cw32f003_rcc.o(.text.RCC_CCS_Config) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_LSELOCK_Config) refers to cw32f003_rcc.o(.text.RCC_LSELOCK_Config) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_WAKEUPCLK_Config) refers to cw32f003_rcc.o(.text.RCC_WAKEUPCLK_Config) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_LOCKUP_Config) refers to cw32f003_rcc.o(.text.RCC_LOCKUP_Config) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_SWDIO_Config) refers to cw32f003_rcc.o(.text.RCC_SWDIO_Config) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_RSTIO_Config) refers to cw32f003_rcc.o(.text.RCC_RSTIO_Config) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_DeInit) refers to cw32f003_rcc.o(.text.RCC_DeInit) for [Anonymous Symbol]
+    cw32f003_rcc.o(.text.RCC_Sysctrl_GetPClkFreq) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    cw32f003_rcc.o(.text.RCC_Sysctrl_GetPClkFreq) refers to cw32f003_rcc.o(.rodata.hsiprs_tbl) for hsiprs_tbl
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_Sysctrl_GetPClkFreq) refers to cw32f003_rcc.o(.text.RCC_Sysctrl_GetPClkFreq) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_HSI_Enable) refers to cw32f003_rcc.o(.text.RCC_HSI_Enable) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_HSI_Disable) refers to cw32f003_rcc.o(.text.RCC_HSI_Disable) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_LSI_Enable) refers to cw32f003_rcc.o(.text.RCC_LSI_Enable) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_LSI_Disable) refers to cw32f003_rcc.o(.text.RCC_LSI_Disable) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_HEX_Enable) refers to cw32f003_rcc.o(.text.RCC_HEX_Enable) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_HEX_Disable) refers to cw32f003_rcc.o(.text.RCC_HEX_Disable) for [Anonymous Symbol]
+    cw32f003_rcc.o(.text.RCC_SysClk_Switch) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    cw32f003_rcc.o(.text.RCC_SysClk_Switch) refers to cw32f003_rcc.o(.rodata.hsiprs_tbl) for hsiprs_tbl
+    cw32f003_rcc.o(.text.RCC_SysClk_Switch) refers to system_cw32f003.o(.data.SystemCoreClock) for SystemCoreClock
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_SysClk_Switch) refers to cw32f003_rcc.o(.text.RCC_SysClk_Switch) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_ITConfig) refers to cw32f003_rcc.o(.text.RCC_ITConfig) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_GetITStatus) refers to cw32f003_rcc.o(.text.RCC_GetITStatus) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_ClearITPendingBit) refers to cw32f003_rcc.o(.text.RCC_ClearITPendingBit) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_GetStableFlag) refers to cw32f003_rcc.o(.text.RCC_GetStableFlag) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_GetAllStableFlag) refers to cw32f003_rcc.o(.text.RCC_GetAllStableFlag) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_AHBPeriphClk_Enable) refers to cw32f003_rcc.o(.text.RCC_AHBPeriphClk_Enable) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_APBPeriphClk_Enable1) refers to cw32f003_rcc.o(.text.RCC_APBPeriphClk_Enable1) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_APBPeriphClk_Enable2) refers to cw32f003_rcc.o(.text.RCC_APBPeriphClk_Enable2) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_AHBPeriphReset) refers to cw32f003_rcc.o(.text.RCC_AHBPeriphReset) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_APBPeriphReset1) refers to cw32f003_rcc.o(.text.RCC_APBPeriphReset1) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_APBPeriphReset2) refers to cw32f003_rcc.o(.text.RCC_APBPeriphReset2) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_GetRstFlag) refers to cw32f003_rcc.o(.text.RCC_GetRstFlag) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_GetAllRstFlag) refers to cw32f003_rcc.o(.text.RCC_GetAllRstFlag) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_ClearRstFlag) refers to cw32f003_rcc.o(.text.RCC_ClearRstFlag) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_HCLK_OUT) refers to cw32f003_rcc.o(.text.RCC_HCLK_OUT) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_PCLK_OUT) refers to cw32f003_rcc.o(.text.RCC_PCLK_OUT) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_MCO_OUT) refers to cw32f003_rcc.o(.text.RCC_MCO_OUT) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_DEBUG_Config) refers to cw32f003_rcc.o(.text.RCC_DEBUG_Config) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_BTIM3ITRSelect) refers to cw32f003_rcc.o(.text.RCC_BTIM3ITRSelect) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_BTIM2ITRSelect) refers to cw32f003_rcc.o(.text.RCC_BTIM2ITRSelect) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_BTIM1ITRSelect) refers to cw32f003_rcc.o(.text.RCC_BTIM1ITRSelect) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_GTIMITRSelect) refers to cw32f003_rcc.o(.text.RCC_GTIMITRSelect) for [Anonymous Symbol]
+    cw32f003_rcc.o(.ARM.exidx.text.RCC_ATIMITRSelect) refers to cw32f003_rcc.o(.text.RCC_ATIMITRSelect) for [Anonymous Symbol]
+    cw32f003_spi.o(.ARM.exidx.text.SPI_SendData) refers to cw32f003_spi.o(.text.SPI_SendData) for [Anonymous Symbol]
+    cw32f003_spi.o(.ARM.exidx.text.SPI_ReceiveData) refers to cw32f003_spi.o(.text.SPI_ReceiveData) for [Anonymous Symbol]
+    cw32f003_spi.o(.ARM.exidx.text.SPI_Init) refers to cw32f003_spi.o(.text.SPI_Init) for [Anonymous Symbol]
+    cw32f003_spi.o(.ARM.exidx.text.SPI_StructInit) refers to cw32f003_spi.o(.text.SPI_StructInit) for [Anonymous Symbol]
+    cw32f003_spi.o(.ARM.exidx.text.SPI_DeInit) refers to cw32f003_spi.o(.text.SPI_DeInit) for [Anonymous Symbol]
+    cw32f003_spi.o(.ARM.exidx.text.SPI_Cmd) refers to cw32f003_spi.o(.text.SPI_Cmd) for [Anonymous Symbol]
+    cw32f003_spi.o(.ARM.exidx.text.SPI_ITConfig) refers to cw32f003_spi.o(.text.SPI_ITConfig) for [Anonymous Symbol]
+    cw32f003_spi.o(.ARM.exidx.text.SPI_GetITStatus) refers to cw32f003_spi.o(.text.SPI_GetITStatus) for [Anonymous Symbol]
+    cw32f003_spi.o(.ARM.exidx.text.SPI_ClearITPendingBit) refers to cw32f003_spi.o(.text.SPI_ClearITPendingBit) for [Anonymous Symbol]
+    cw32f003_spi.o(.ARM.exidx.text.SPI_GetFlagStatus) refers to cw32f003_spi.o(.text.SPI_GetFlagStatus) for [Anonymous Symbol]
+    cw32f003_spi.o(.ARM.exidx.text.SPI_ClearFlag) refers to cw32f003_spi.o(.text.SPI_ClearFlag) for [Anonymous Symbol]
+    cw32f003_spi.o(.ARM.exidx.text.SPI_BiDirectionalLineConfig) refers to cw32f003_spi.o(.text.SPI_BiDirectionalLineConfig) for [Anonymous Symbol]
+    cw32f003_spi.o(.ARM.exidx.text.SPI_NSSInternalSoftwareConfig) refers to cw32f003_spi.o(.text.SPI_NSSInternalSoftwareConfig) for [Anonymous Symbol]
+    cw32f003_spi.o(.ARM.exidx.text.SPI_DataSizeConfig) refers to cw32f003_spi.o(.text.SPI_DataSizeConfig) for [Anonymous Symbol]
+    cw32f003_spi.o(.ARM.exidx.text.SPI_MISOOutputConfig) refers to cw32f003_spi.o(.text.SPI_MISOOutputConfig) for [Anonymous Symbol]
+    cw32f003_spi.o(.ARM.exidx.text.SPI_FlushSendBuff) refers to cw32f003_spi.o(.text.SPI_FlushSendBuff) for [Anonymous Symbol]
+    cw32f003_systick.o(.text.InitTick) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    cw32f003_systick.o(.text.InitTick) refers to cw32f003_systick.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    cw32f003_systick.o(.ARM.exidx.text.InitTick) refers to cw32f003_systick.o(.text.InitTick) for [Anonymous Symbol]
+    cw32f003_systick.o(.text.GetTick) refers to cw32f003_systick.o(.bss.uwTick) for uwTick
+    cw32f003_systick.o(.ARM.exidx.text.GetTick) refers to cw32f003_systick.o(.text.GetTick) for [Anonymous Symbol]
+    cw32f003_systick.o(.text.SysTickDelay) refers to cw32f003_systick.o(.text.GetTick) for GetTick
+    cw32f003_systick.o(.text.SysTickDelay) refers to cw32f003_systick.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    cw32f003_systick.o(.ARM.exidx.text.SysTickDelay) refers to cw32f003_systick.o(.text.SysTickDelay) for [Anonymous Symbol]
+    cw32f003_systick.o(.ARM.exidx.text.SuspendTick) refers to cw32f003_systick.o(.text.SuspendTick) for [Anonymous Symbol]
+    cw32f003_systick.o(.ARM.exidx.text.ResumeTick) refers to cw32f003_systick.o(.text.ResumeTick) for [Anonymous Symbol]
+    cw32f003_systick.o(.text.SysTick_Handler) refers to main.o(.text.On_SysTick_Update) for On_SysTick_Update
+    cw32f003_systick.o(.text.SysTick_Handler) refers to cw32f003_systick.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    cw32f003_systick.o(.text.SysTick_Handler) refers to cw32f003_systick.o(.bss.uwTick) for uwTick
+    cw32f003_systick.o(.ARM.exidx.text.SysTick_Handler) refers to cw32f003_systick.o(.text.SysTick_Handler) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.USART_SendData) refers to cw32f003_uart.o(.text.USART_SendData) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.USART_SendData_8bit) refers to cw32f003_uart.o(.text.USART_SendData_8bit) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.USART_ReceiveData) refers to cw32f003_uart.o(.text.USART_ReceiveData) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.USART_ReceiveData_8bit) refers to cw32f003_uart.o(.text.USART_ReceiveData_8bit) for [Anonymous Symbol]
+    cw32f003_uart.o(.text.USART_Init) refers to ffltui.o(.text) for __aeabi_ui2f
+    cw32f003_uart.o(.text.USART_Init) refers to fdiv.o(.text) for __aeabi_fdiv
+    cw32f003_uart.o(.text.USART_Init) refers to ffixi.o(.text) for __aeabi_f2iz
+    cw32f003_uart.o(.text.USART_Init) refers to fadd.o(.text) for __aeabi_fsub
+    cw32f003_uart.o(.text.USART_Init) refers to fmul.o(.text) for __aeabi_fmul
+    cw32f003_uart.o(.text.USART_Init) refers to f2d.o(.text) for __aeabi_f2d
+    cw32f003_uart.o(.text.USART_Init) refers to dadd.o(.text) for __aeabi_dadd
+    cw32f003_uart.o(.text.USART_Init) refers to dfixi.o(.text) for __aeabi_d2iz
+    cw32f003_uart.o(.ARM.exidx.text.USART_Init) refers to cw32f003_uart.o(.text.USART_Init) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.USART_StructInit) refers to cw32f003_uart.o(.text.USART_StructInit) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.USART_ClockInit) refers to cw32f003_uart.o(.text.USART_ClockInit) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.USART_ClockStructInit) refers to cw32f003_uart.o(.text.USART_ClockStructInit) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.UART1_DeInit) refers to cw32f003_uart.o(.text.UART1_DeInit) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.UART2_DeInit) refers to cw32f003_uart.o(.text.UART2_DeInit) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.USART_ITConfig) refers to cw32f003_uart.o(.text.USART_ITConfig) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.USART_GetITStatus) refers to cw32f003_uart.o(.text.USART_GetITStatus) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.USART_ClearITPendingBit) refers to cw32f003_uart.o(.text.USART_ClearITPendingBit) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.USART_GetFlagStatus) refers to cw32f003_uart.o(.text.USART_GetFlagStatus) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.USART_ClearFlag) refers to cw32f003_uart.o(.text.USART_ClearFlag) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.USART_DirectionModeCmd) refers to cw32f003_uart.o(.text.USART_DirectionModeCmd) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.USART_InvPinCmd) refers to cw32f003_uart.o(.text.USART_InvPinCmd) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.USART_HalfDuplexCmd) refers to cw32f003_uart.o(.text.USART_HalfDuplexCmd) for [Anonymous Symbol]
+    cw32f003_uart.o(.ARM.exidx.text.USART_SetMultiMode) refers to cw32f003_uart.o(.text.USART_SetMultiMode) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC_EnableNvic) refers to cw32f003_vc.o(.text.VC_EnableNvic) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1_EnableIrq) refers to cw32f003_vc.o(.text.VC1_EnableIrq) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC2_EnableIrq) refers to cw32f003_vc.o(.text.VC2_EnableIrq) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1_DisableIrq) refers to cw32f003_vc.o(.text.VC1_DisableIrq) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC_DisableNvic) refers to cw32f003_vc.o(.text.VC_DisableNvic) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC2_DisableIrq) refers to cw32f003_vc.o(.text.VC2_DisableIrq) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1_GetFlagStatus) refers to cw32f003_vc.o(.text.VC1_GetFlagStatus) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC2_GetFlagStatus) refers to cw32f003_vc.o(.text.VC2_GetFlagStatus) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1_ClearIrq) refers to cw32f003_vc.o(.text.VC1_ClearIrq) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC2_ClearIrq) refers to cw32f003_vc.o(.text.VC2_ClearIrq) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1VC2_DIVInit) refers to cw32f003_vc.o(.text.VC1VC2_DIVInit) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1VC2_DIVDeInit) refers to cw32f003_vc.o(.text.VC1VC2_DIVDeInit) for [Anonymous Symbol]
+    cw32f003_vc.o(.text.VC1VC2_INNInit) refers to cw32f003_adc.o(.text.ADC_Enable) for ADC_Enable
+    cw32f003_vc.o(.ARM.exidx.text.VC1VC2_INNInit) refers to cw32f003_vc.o(.text.VC1VC2_INNInit) for [Anonymous Symbol]
+    cw32f003_vc.o(.text.VC1_ChannelInit) refers to cw32f003_adc.o(.text.ADC_Enable) for ADC_Enable
+    cw32f003_vc.o(.ARM.exidx.text.VC1_ChannelInit) refers to cw32f003_vc.o(.text.VC1_ChannelInit) for [Anonymous Symbol]
+    cw32f003_vc.o(.text.VC2_ChannelInit) refers to cw32f003_adc.o(.text.ADC_Enable) for ADC_Enable
+    cw32f003_vc.o(.ARM.exidx.text.VC2_ChannelInit) refers to cw32f003_vc.o(.text.VC2_ChannelInit) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC_DeInit) refers to cw32f003_vc.o(.text.VC_DeInit) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1_ChannelDeInit) refers to cw32f003_vc.o(.text.VC1_ChannelDeInit) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC2_ChannelDeInit) refers to cw32f003_vc.o(.text.VC2_ChannelDeInit) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1_EnableChannel) refers to cw32f003_vc.o(.text.VC1_EnableChannel) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC2_EnableChannel) refers to cw32f003_vc.o(.text.VC2_EnableChannel) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1_DisableChannel) refers to cw32f003_vc.o(.text.VC1_DisableChannel) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC2_DisableChannel) refers to cw32f003_vc.o(.text.VC2_DisableChannel) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1_EnableFilter) refers to cw32f003_vc.o(.text.VC1_EnableFilter) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC2_EnableFilter) refers to cw32f003_vc.o(.text.VC2_EnableFilter) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1_DisableFilter) refers to cw32f003_vc.o(.text.VC1_DisableFilter) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC2_DisableFilter) refers to cw32f003_vc.o(.text.VC2_DisableFilter) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1VC2_OutInit) refers to cw32f003_vc.o(.text.VC1VC2_OutInit) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1_OutputCfg) refers to cw32f003_vc.o(.text.VC1_OutputCfg) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC2_OutputCfg) refers to cw32f003_vc.o(.text.VC2_OutputCfg) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1VC2_BlankInit) refers to cw32f003_vc.o(.text.VC1VC2_BlankInit) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1_BlankCfg) refers to cw32f003_vc.o(.text.VC1_BlankCfg) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC2_BlankCfg) refers to cw32f003_vc.o(.text.VC2_BlankCfg) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1_WindowEnable) refers to cw32f003_vc.o(.text.VC1_WindowEnable) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC2_WindowEnable) refers to cw32f003_vc.o(.text.VC2_WindowEnable) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1_PolarityCfg) refers to cw32f003_vc.o(.text.VC1_PolarityCfg) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC2_PolarityCfg) refers to cw32f003_vc.o(.text.VC2_PolarityCfg) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1_ITConfig) refers to cw32f003_vc.o(.text.VC1_ITConfig) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC2_ITConfig) refers to cw32f003_vc.o(.text.VC2_ITConfig) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC1_GetEnableStatus) refers to cw32f003_vc.o(.text.VC1_GetEnableStatus) for [Anonymous Symbol]
+    cw32f003_vc.o(.ARM.exidx.text.VC2_GetEnableStatus) refers to cw32f003_vc.o(.text.VC2_GetEnableStatus) for [Anonymous Symbol]
+    cw32f003_wwdt.o(.ARM.exidx.text.WWDT_DeInit) refers to cw32f003_wwdt.o(.text.WWDT_DeInit) for [Anonymous Symbol]
+    cw32f003_wwdt.o(.ARM.exidx.text.WWDT_Init) refers to cw32f003_wwdt.o(.text.WWDT_Init) for [Anonymous Symbol]
+    cw32f003_wwdt.o(.ARM.exidx.text.WWDT_Cmd) refers to cw32f003_wwdt.o(.text.WWDT_Cmd) for [Anonymous Symbol]
+    cw32f003_wwdt.o(.ARM.exidx.text.WWDT_Refresh) refers to cw32f003_wwdt.o(.text.WWDT_Refresh) for [Anonymous Symbol]
+    cw32f003_wwdt.o(.ARM.exidx.text.WWDT_SetPrescaler) refers to cw32f003_wwdt.o(.text.WWDT_SetPrescaler) for [Anonymous Symbol]
+    cw32f003_wwdt.o(.ARM.exidx.text.WWDT_SetWindowValue) refers to cw32f003_wwdt.o(.text.WWDT_SetWindowValue) for [Anonymous Symbol]
+    cw32f003_wwdt.o(.ARM.exidx.text.WWDT_GetCounterValue) refers to cw32f003_wwdt.o(.text.WWDT_GetCounterValue) for [Anonymous Symbol]
+    cw32f003_wwdt.o(.ARM.exidx.text.WWDT_GetWindowValue) refers to cw32f003_wwdt.o(.text.WWDT_GetWindowValue) for [Anonymous Symbol]
+    cw32f003_wwdt.o(.ARM.exidx.text.WWDT_EnableIT) refers to cw32f003_wwdt.o(.text.WWDT_EnableIT) for [Anonymous Symbol]
+    cw32f003_wwdt.o(.ARM.exidx.text.WWDT_GetFlagStatus) refers to cw32f003_wwdt.o(.text.WWDT_GetFlagStatus) for [Anonymous Symbol]
+    cw32f003_wwdt.o(.ARM.exidx.text.WWDT_ClearFlag) refers to cw32f003_wwdt.o(.text.WWDT_ClearFlag) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_DeInit) refers to cw32f003_atim.o(.text.ATIM_DeInit) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_Init) refers to cw32f003_atim.o(.text.ATIM_Init) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_Cmd) refers to cw32f003_atim.o(.text.ATIM_Cmd) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_ITConfig) refers to cw32f003_atim.o(.text.ATIM_ITConfig) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_GetITStatus) refers to cw32f003_atim.o(.text.ATIM_GetITStatus) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_ClearITPendingBit) refers to cw32f003_atim.o(.text.ATIM_ClearITPendingBit) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_SetReloadValue) refers to cw32f003_atim.o(.text.ATIM_SetReloadValue) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_CH1Config) refers to cw32f003_atim.o(.text.ATIM_CH1Config) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_CH2Config) refers to cw32f003_atim.o(.text.ATIM_CH2Config) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_CH3Config) refers to cw32f003_atim.o(.text.ATIM_CH3Config) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_CH4Config) refers to cw32f003_atim.o(.text.ATIM_CH4Config) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_IC1AInit) refers to cw32f003_atim.o(.text.ATIM_IC1AInit) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_IC1BInit) refers to cw32f003_atim.o(.text.ATIM_IC1BInit) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_IC2AInit) refers to cw32f003_atim.o(.text.ATIM_IC2AInit) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_IC2BInit) refers to cw32f003_atim.o(.text.ATIM_IC2BInit) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_IC3AInit) refers to cw32f003_atim.o(.text.ATIM_IC3AInit) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_IC3BInit) refers to cw32f003_atim.o(.text.ATIM_IC3BInit) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_OC1AInit) refers to cw32f003_atim.o(.text.ATIM_OC1AInit) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_OC1BInit) refers to cw32f003_atim.o(.text.ATIM_OC1BInit) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_OC2AInit) refers to cw32f003_atim.o(.text.ATIM_OC2AInit) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_OC2BInit) refers to cw32f003_atim.o(.text.ATIM_OC2BInit) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_OC3AInit) refers to cw32f003_atim.o(.text.ATIM_OC3AInit) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_OC3BInit) refers to cw32f003_atim.o(.text.ATIM_OC3BInit) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_OC4Init) refers to cw32f003_atim.o(.text.ATIM_OC4Init) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_PWMOutputConfig) refers to cw32f003_atim.o(.text.ATIM_PWMOutputConfig) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_CtrlPWMOutputs) refers to cw32f003_atim.o(.text.ATIM_CtrlPWMOutputs) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_ETRSelect) refers to cw32f003_atim.o(.text.ATIM_ETRSelect) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_ETRConfig) refers to cw32f003_atim.o(.text.ATIM_ETRConfig) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_BrakeConfig) refers to cw32f003_atim.o(.text.ATIM_BrakeConfig) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_ADCTriggerConfig) refers to cw32f003_atim.o(.text.ATIM_ADCTriggerConfig) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_GetCapture1A) refers to cw32f003_atim.o(.text.ATIM_GetCapture1A) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_GetCapture2A) refers to cw32f003_atim.o(.text.ATIM_GetCapture2A) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_GetCapture3A) refers to cw32f003_atim.o(.text.ATIM_GetCapture3A) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_GetCapture1B) refers to cw32f003_atim.o(.text.ATIM_GetCapture1B) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_GetCapture2B) refers to cw32f003_atim.o(.text.ATIM_GetCapture2B) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_GetCapture3B) refers to cw32f003_atim.o(.text.ATIM_GetCapture3B) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_SetCompare1A) refers to cw32f003_atim.o(.text.ATIM_SetCompare1A) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_SetCompare2A) refers to cw32f003_atim.o(.text.ATIM_SetCompare2A) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_SetCompare3A) refers to cw32f003_atim.o(.text.ATIM_SetCompare3A) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_SetCompare1B) refers to cw32f003_atim.o(.text.ATIM_SetCompare1B) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_SetCompare2B) refers to cw32f003_atim.o(.text.ATIM_SetCompare2B) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_SetCompare3B) refers to cw32f003_atim.o(.text.ATIM_SetCompare3B) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_SetCompare4) refers to cw32f003_atim.o(.text.ATIM_SetCompare4) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_MasterModeConfig) refers to cw32f003_atim.o(.text.ATIM_MasterModeConfig) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_SlaverModeConfig) refers to cw32f003_atim.o(.text.ATIM_SlaverModeConfig) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_TriggerSelect) refers to cw32f003_atim.o(.text.ATIM_TriggerSelect) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_UpdateEventSelect) refers to cw32f003_atim.o(.text.ATIM_UpdateEventSelect) for [Anonymous Symbol]
+    cw32f003_atim.o(.ARM.exidx.text.ATIM_ITRSelect) refers to cw32f003_atim.o(.text.ATIM_ITRSelect) for [Anonymous Symbol]
+    uart1.o(.text.GPIO_Configuration) refers to cw32f003_gpio.o(.text.GPIO_Init) for GPIO_Init
+    uart1.o(.ARM.exidx.text.GPIO_Configuration) refers to uart1.o(.text.GPIO_Configuration) for [Anonymous Symbol]
+    uart1.o(.text.UART_Configuration) refers to cw32f003_uart.o(.text.USART_Init) for USART_Init
+    uart1.o(.ARM.exidx.text.UART_Configuration) refers to uart1.o(.text.UART_Configuration) for [Anonymous Symbol]
+    uart1.o(.text.UART1_init) refers to cw32f003_rcc.o(.text.RCC_AHBPeriphClk_Enable) for RCC_AHBPeriphClk_Enable
+    uart1.o(.text.UART1_init) refers to cw32f003_rcc.o(.text.RCC_APBPeriphClk_Enable2) for RCC_APBPeriphClk_Enable2
+    uart1.o(.text.UART1_init) refers to cw32f003_gpio.o(.text.GPIO_Init) for GPIO_Init
+    uart1.o(.text.UART1_init) refers to cw32f003_uart.o(.text.USART_Init) for USART_Init
+    uart1.o(.text.UART1_init) refers to cw32f003_uart.o(.text.USART_ITConfig) for USART_ITConfig
+    uart1.o(.ARM.exidx.text.UART1_init) refers to uart1.o(.text.UART1_init) for [Anonymous Symbol]
+    uart1.o(.text.UART1_SendString) refers to cw32f003_uart.o(.text.USART_SendData_8bit) for USART_SendData_8bit
+    uart1.o(.text.UART1_SendString) refers to cw32f003_uart.o(.text.USART_GetFlagStatus) for USART_GetFlagStatus
+    uart1.o(.ARM.exidx.text.UART1_SendString) refers to uart1.o(.text.UART1_SendString) for [Anonymous Symbol]
+    uart1.o(.text.UART1_SendDataArray) refers to cw32f003_uart.o(.text.USART_SendData_8bit) for USART_SendData_8bit
+    uart1.o(.text.UART1_SendDataArray) refers to cw32f003_uart.o(.text.USART_GetFlagStatus) for USART_GetFlagStatus
+    uart1.o(.ARM.exidx.text.UART1_SendDataArray) refers to uart1.o(.text.UART1_SendDataArray) for [Anonymous Symbol]
+    uart1.o(.text.fputc) refers to cw32f003_uart.o(.text.USART_SendData_8bit) for USART_SendData_8bit
+    uart1.o(.text.fputc) refers to cw32f003_uart.o(.text.USART_GetFlagStatus) for USART_GetFlagStatus
+    uart1.o(.ARM.exidx.text.fputc) refers to uart1.o(.text.fputc) for [Anonymous Symbol]
+    i2c.o(.text.I2C_init) refers to cw32f003_gpio.o(.text.GPIO_Init) for GPIO_Init
+    i2c.o(.ARM.exidx.text.I2C_init) refers to i2c.o(.text.I2C_init) for [Anonymous Symbol]
+    i2c.o(.text.I2C_write) refers to cw32f003_gpio.o(.text.GPIO_WritePin) for GPIO_WritePin
+    i2c.o(.text.I2C_write) refers to system_cw32f003.o(.text.FirmwareDelay) for FirmwareDelay
+    i2c.o(.text.I2C_write) refers to i2c.o(.text.send) for send
+    i2c.o(.text.I2C_write) refers to i2c.o(.text.wait_ack) for wait_ack
+    i2c.o(.ARM.exidx.text.I2C_write) refers to i2c.o(.text.I2C_write) for [Anonymous Symbol]
+    i2c.o(.text.send) refers to cw32f003_gpio.o(.text.GPIO_WritePin) for GPIO_WritePin
+    i2c.o(.text.send) refers to system_cw32f003.o(.text.FirmwareDelay) for FirmwareDelay
+    i2c.o(.ARM.exidx.text.send) refers to i2c.o(.text.send) for [Anonymous Symbol]
+    i2c.o(.text.I2C_write2) refers to cw32f003_gpio.o(.text.GPIO_WritePin) for GPIO_WritePin
+    i2c.o(.text.I2C_write2) refers to system_cw32f003.o(.text.FirmwareDelay) for FirmwareDelay
+    i2c.o(.text.I2C_write2) refers to i2c.o(.text.send) for send
+    i2c.o(.text.I2C_write2) refers to i2c.o(.text.wait_ack) for wait_ack
+    i2c.o(.ARM.exidx.text.I2C_write2) refers to i2c.o(.text.I2C_write2) for [Anonymous Symbol]
+    i2c.o(.text.I2C_read) refers to cw32f003_gpio.o(.text.GPIO_WritePin) for GPIO_WritePin
+    i2c.o(.text.I2C_read) refers to system_cw32f003.o(.text.FirmwareDelay) for FirmwareDelay
+    i2c.o(.text.I2C_read) refers to i2c.o(.text.send) for send
+    i2c.o(.text.I2C_read) refers to i2c.o(.text.wait_ack) for wait_ack
+    i2c.o(.text.I2C_read) refers to cw32f003_gpio.o(.text.GPIO_ReadPin) for GPIO_ReadPin
+    i2c.o(.ARM.exidx.text.I2C_read) refers to i2c.o(.text.I2C_read) for [Anonymous Symbol]
+    i2c.o(.text.wait_ack) refers to cw32f003_gpio.o(.text.GPIO_WritePin) for GPIO_WritePin
+    i2c.o(.text.wait_ack) refers to system_cw32f003.o(.text.FirmwareDelay) for FirmwareDelay
+    i2c.o(.text.wait_ack) refers to cw32f003_gpio.o(.text.GPIO_ReadPin) for GPIO_ReadPin
+    i2c.o(.ARM.exidx.text.wait_ack) refers to i2c.o(.text.wait_ack) for [Anonymous Symbol]
+    tools.o(.text.Mean_Value_Filter) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    tools.o(.ARM.exidx.text.Mean_Value_Filter) refers to tools.o(.text.Mean_Value_Filter) for [Anonymous Symbol]
+    adc_collector.o(.text.ADC_Collector_init) refers to cw32f003_gpio.o(.text.GPIO_Init) for GPIO_Init
+    adc_collector.o(.text.ADC_Collector_init) refers to cw32f003_adc.o(.text.ADC_StructInit) for ADC_StructInit
+    adc_collector.o(.text.ADC_Collector_init) refers to cw32f003_adc.o(.text.ADC_SerialChContinuousModeCfg) for ADC_SerialChContinuousModeCfg
+    adc_collector.o(.text.ADC_Collector_init) refers to cw32f003_adc.o(.text.ADC_ClearITPendingAll) for ADC_ClearITPendingAll
+    adc_collector.o(.text.ADC_Collector_init) refers to cw32f003_adc.o(.text.ADC_Enable) for ADC_Enable
+    adc_collector.o(.text.ADC_Collector_init) refers to cw32f003_adc.o(.text.ADC_SoftwareStartConvCmd) for ADC_SoftwareStartConvCmd
+    adc_collector.o(.text.ADC_Collector_init) refers to adc_collector.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    adc_collector.o(.ARM.exidx.text.ADC_Collector_init) refers to adc_collector.o(.text.ADC_Collector_init) for [Anonymous Symbol]
+    adc_collector.o(.text.ADC_Collector_get) refers to cw32f003_adc.o(.text.ADC_GetSqr0Result) for ADC_GetSqr0Result
+    adc_collector.o(.text.ADC_Collector_get) refers to cw32f003_adc.o(.text.ADC_GetSqr1Result) for ADC_GetSqr1Result
+    adc_collector.o(.text.ADC_Collector_get) refers to adc_collector.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    adc_collector.o(.ARM.exidx.text.ADC_Collector_get) refers to adc_collector.o(.text.ADC_Collector_get) for [Anonymous Symbol]
+    adc_collector.o(.text.ADC_Collector_get_voltage) refers to tools.o(.text.Mean_Value_Filter) for Mean_Value_Filter
+    adc_collector.o(.text.ADC_Collector_get_voltage) refers to ffltui.o(.text) for __aeabi_ui2f
+    adc_collector.o(.text.ADC_Collector_get_voltage) refers to adc_collector.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    adc_collector.o(.ARM.exidx.text.ADC_Collector_get_voltage) refers to adc_collector.o(.text.ADC_Collector_get_voltage) for [Anonymous Symbol]
+    adc_collector.o(.text.ADC_Collector_get_current) refers to tools.o(.text.Mean_Value_Filter) for Mean_Value_Filter
+    adc_collector.o(.text.ADC_Collector_get_current) refers to ffltui.o(.text) for __aeabi_ui2f
+    adc_collector.o(.text.ADC_Collector_get_current) refers to fmul.o(.text) for __aeabi_fmul
+    adc_collector.o(.text.ADC_Collector_get_current) refers to adc_collector.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    adc_collector.o(.ARM.exidx.text.ADC_Collector_get_current) refers to adc_collector.o(.text.ADC_Collector_get_current) for [Anonymous Symbol]
+    bluetooth.o(.text.Bluetooth_init) refers to cw32f003_rcc.o(.text.RCC_AHBPeriphClk_Enable) for RCC_AHBPeriphClk_Enable
+    bluetooth.o(.text.Bluetooth_init) refers to cw32f003_gpio.o(.text.GPIO_Init) for GPIO_Init
+    bluetooth.o(.text.Bluetooth_init) refers to cw32f003_rcc.o(.text.RCC_APBPeriphClk_Enable1) for RCC_APBPeriphClk_Enable1
+    bluetooth.o(.text.Bluetooth_init) refers to cw32f003_rcc.o(.text.RCC_Sysctrl_GetPClkFreq) for RCC_Sysctrl_GetPClkFreq
+    bluetooth.o(.text.Bluetooth_init) refers to cw32f003_uart.o(.text.USART_Init) for USART_Init
+    bluetooth.o(.ARM.exidx.text.Bluetooth_init) refers to bluetooth.o(.text.Bluetooth_init) for [Anonymous Symbol]
+    bluetooth.o(.text.Bluetooth_send_string) refers to cw32f003_uart.o(.text.USART_SendData_8bit) for USART_SendData_8bit
+    bluetooth.o(.text.Bluetooth_send_string) refers to cw32f003_uart.o(.text.USART_GetFlagStatus) for USART_GetFlagStatus
+    bluetooth.o(.ARM.exidx.text.Bluetooth_send_string) refers to bluetooth.o(.text.Bluetooth_send_string) for [Anonymous Symbol]
+    bluetooth.o(.text.Bluetooth_send_data) refers to cw32f003_uart.o(.text.USART_SendData_8bit) for USART_SendData_8bit
+    bluetooth.o(.text.Bluetooth_send_data) refers to cw32f003_uart.o(.text.USART_GetFlagStatus) for USART_GetFlagStatus
+    bluetooth.o(.ARM.exidx.text.Bluetooth_send_data) refers to bluetooth.o(.text.Bluetooth_send_data) for [Anonymous Symbol]
+    servo.o(.text.Servo_motor_config) refers to cw32f003_gtim.o(.text.GTIM_TimeBaseInit) for GTIM_TimeBaseInit
+    servo.o(.text.Servo_motor_config) refers to cw32f003_gtim.o(.text.GTIM_OCInit) for GTIM_OCInit
+    servo.o(.text.Servo_motor_config) refers to cw32f003_gtim.o(.text.GTIM_SetCompare3) for GTIM_SetCompare3
+    servo.o(.text.Servo_motor_config) refers to cw32f003_gtim.o(.text.GTIM_ITConfig) for GTIM_ITConfig
+    servo.o(.text.Servo_motor_config) refers to cw32f003_gtim.o(.text.GTIM_Cmd) for GTIM_Cmd
+    servo.o(.ARM.exidx.text.Servo_motor_config) refers to servo.o(.text.Servo_motor_config) for [Anonymous Symbol]
+    servo.o(.text.Servo_init) refers to cw32f003_gtim.o(.text.GTIM_TimeBaseInit) for GTIM_TimeBaseInit
+    servo.o(.text.Servo_init) refers to cw32f003_gtim.o(.text.GTIM_OCInit) for GTIM_OCInit
+    servo.o(.text.Servo_init) refers to cw32f003_gtim.o(.text.GTIM_SetCompare3) for GTIM_SetCompare3
+    servo.o(.text.Servo_init) refers to cw32f003_gtim.o(.text.GTIM_ITConfig) for GTIM_ITConfig
+    servo.o(.text.Servo_init) refers to cw32f003_gtim.o(.text.GTIM_Cmd) for GTIM_Cmd
+    servo.o(.ARM.exidx.text.Servo_init) refers to servo.o(.text.Servo_init) for [Anonymous Symbol]
+    servo.o(.text.Servo_set_angle) refers to fcmpgt.o(.text) for __aeabi_fcmpgt
+    servo.o(.text.Servo_set_angle) refers to fcmpge.o(.text) for __aeabi_fcmpge
+    servo.o(.text.Servo_set_angle) refers to f2d.o(.text) for __aeabi_f2d
+    servo.o(.text.Servo_set_angle) refers to dmul.o(.text) for __aeabi_dmul
+    servo.o(.text.Servo_set_angle) refers to dadd.o(.text) for __aeabi_dadd
+    servo.o(.text.Servo_set_angle) refers to d2f.o(.text) for __aeabi_d2f
+    servo.o(.text.Servo_set_angle) refers to fmul.o(.text) for __aeabi_fmul
+    servo.o(.text.Servo_set_angle) refers to fadd.o(.text) for __aeabi_fadd
+    servo.o(.text.Servo_set_angle) refers to ffixui.o(.text) for __aeabi_f2uiz
+    servo.o(.text.Servo_set_angle) refers to cw32f003_gtim.o(.text.GTIM_SetCompare3) for GTIM_SetCompare3
+    servo.o(.text.Servo_set_angle) refers to servo.o(.data.current_angle) for current_angle
+    servo.o(.ARM.exidx.text.Servo_set_angle) refers to servo.o(.text.Servo_set_angle) for [Anonymous Symbol]
+    servo.o(.text.Servo_get_angle) refers to servo.o(.data.current_angle) for current_angle
+    servo.o(.ARM.exidx.text.Servo_get_angle) refers to servo.o(.text.Servo_get_angle) for [Anonymous Symbol]
+    keys.o(.text.Keys_init) refers to cw32f003_gpio.o(.text.GPIO_Init) for GPIO_Init
+    keys.o(.ARM.exidx.text.Keys_init) refers to keys.o(.text.Keys_init) for [Anonymous Symbol]
+    keys.o(.text.Keys_scan) refers to cw32f003_gpio.o(.text.GPIO_ReadPin) for GPIO_ReadPin
+    keys.o(.text.Keys_scan) refers to app_oled_menu.o(.text.Keys_on_key_up) for Keys_on_key_up
+    keys.o(.text.Keys_scan) refers to app_oled_menu.o(.text.Keys_on_key_down) for Keys_on_key_down
+    keys.o(.text.Keys_scan) refers to keys.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    keys.o(.ARM.exidx.text.Keys_scan) refers to keys.o(.text.Keys_scan) for [Anonymous Symbol]
+    vl53l0x.o(.text.setTimeout) refers to vl53l0x.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    vl53l0x.o(.ARM.exidx.text.setTimeout) refers to vl53l0x.o(.text.setTimeout) for [Anonymous Symbol]
+    vl53l0x.o(.text.getTimeout) refers to vl53l0x.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    vl53l0x.o(.ARM.exidx.text.getTimeout) refers to vl53l0x.o(.text.getTimeout) for [Anonymous Symbol]
+    vl53l0x.o(.text.writeRegList) refers to i2c.o(.text.I2C_write) for I2C_write
+    vl53l0x.o(.ARM.exidx.text.writeRegList) refers to vl53l0x.o(.text.writeRegList) for [Anonymous Symbol]
+    vl53l0x.o(.text.writeReg) refers to i2c.o(.text.I2C_write) for I2C_write
+    vl53l0x.o(.ARM.exidx.text.writeReg) refers to vl53l0x.o(.text.writeReg) for [Anonymous Symbol]
+    vl53l0x.o(.text.VL53L0X_init) refers to cw32f003_systick.o(.text.SysTickDelay) for SysTickDelay
+    vl53l0x.o(.text.VL53L0X_init) refers to i2c.o(.text.I2C_read) for I2C_read
+    vl53l0x.o(.text.VL53L0X_init) refers to printfa.o(i.__0printf) for __2printf
+    vl53l0x.o(.text.VL53L0X_init) refers to i2c.o(.text.I2C_write) for I2C_write
+    vl53l0x.o(.text.VL53L0X_init) refers to vl53l0x.o(.text.getSpadInfo) for getSpadInfo
+    vl53l0x.o(.text.VL53L0X_init) refers to vl53l0x.o(.text.getMeasurementTimingBudget) for getMeasurementTimingBudget
+    vl53l0x.o(.text.VL53L0X_init) refers to vl53l0x.o(.text.setMeasurementTimingBudget) for setMeasurementTimingBudget
+    vl53l0x.o(.text.VL53L0X_init) refers to vl53l0x.o(.text.performSingleRefCalibration) for performSingleRefCalibration
+    vl53l0x.o(.text.VL53L0X_init) refers to vl53l0x.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    vl53l0x.o(.text.VL53L0X_init) refers to vl53l0x.o(.rodata..L__const.VL53L0X_init.init_sequence) for [Anonymous Symbol]
+    vl53l0x.o(.ARM.exidx.text.VL53L0X_init) refers to vl53l0x.o(.text.VL53L0X_init) for [Anonymous Symbol]
+    vl53l0x.o(.text.readReg) refers to i2c.o(.text.I2C_read) for I2C_read
+    vl53l0x.o(.ARM.exidx.text.readReg) refers to vl53l0x.o(.text.readReg) for [Anonymous Symbol]
+    vl53l0x.o(.text.setSignalRateLimit) refers to fcmplt.o(.text) for __aeabi_fcmplt
+    vl53l0x.o(.text.setSignalRateLimit) refers to f2d.o(.text) for __aeabi_f2d
+    vl53l0x.o(.text.setSignalRateLimit) refers to dcmpgt.o(.text) for __aeabi_dcmpgt
+    vl53l0x.o(.text.setSignalRateLimit) refers to fmul.o(.text) for __aeabi_fmul
+    vl53l0x.o(.text.setSignalRateLimit) refers to ffixi.o(.text) for __aeabi_f2iz
+    vl53l0x.o(.text.setSignalRateLimit) refers to i2c.o(.text.I2C_write) for I2C_write
+    vl53l0x.o(.ARM.exidx.text.setSignalRateLimit) refers to vl53l0x.o(.text.setSignalRateLimit) for [Anonymous Symbol]
+    vl53l0x.o(.text.getSpadInfo) refers to i2c.o(.text.I2C_write) for I2C_write
+    vl53l0x.o(.text.getSpadInfo) refers to i2c.o(.text.I2C_read) for I2C_read
+    vl53l0x.o(.text.getSpadInfo) refers to cw32f003_systick.o(.text.GetTick) for GetTick
+    vl53l0x.o(.text.getSpadInfo) refers to vl53l0x.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    vl53l0x.o(.ARM.exidx.text.getSpadInfo) refers to vl53l0x.o(.text.getSpadInfo) for [Anonymous Symbol]
+    vl53l0x.o(.text.readMulti) refers to i2c.o(.text.I2C_read) for I2C_read
+    vl53l0x.o(.ARM.exidx.text.readMulti) refers to vl53l0x.o(.text.readMulti) for [Anonymous Symbol]
+    vl53l0x.o(.text.writeMulti) refers to i2c.o(.text.I2C_write) for I2C_write
+    vl53l0x.o(.text.writeMulti) refers to vl53l0x.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    vl53l0x.o(.ARM.exidx.text.writeMulti) refers to vl53l0x.o(.text.writeMulti) for [Anonymous Symbol]
+    vl53l0x.o(.text.setMeasurementTimingBudget) refers to i2c.o(.text.I2C_read) for I2C_read
+    vl53l0x.o(.text.setMeasurementTimingBudget) refers to vl53l0x.o(.text.getSequenceStepTimeouts) for getSequenceStepTimeouts
+    vl53l0x.o(.text.setMeasurementTimingBudget) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    vl53l0x.o(.text.setMeasurementTimingBudget) refers to i2c.o(.text.I2C_write) for I2C_write
+    vl53l0x.o(.text.setMeasurementTimingBudget) refers to vl53l0x.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    vl53l0x.o(.ARM.exidx.text.setMeasurementTimingBudget) refers to vl53l0x.o(.text.setMeasurementTimingBudget) for [Anonymous Symbol]
+    vl53l0x.o(.text.performSingleRefCalibration) refers to i2c.o(.text.I2C_write) for I2C_write
+    vl53l0x.o(.text.performSingleRefCalibration) refers to cw32f003_systick.o(.text.GetTick) for GetTick
+    vl53l0x.o(.text.performSingleRefCalibration) refers to i2c.o(.text.I2C_read) for I2C_read
+    vl53l0x.o(.text.performSingleRefCalibration) refers to vl53l0x.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    vl53l0x.o(.ARM.exidx.text.performSingleRefCalibration) refers to vl53l0x.o(.text.performSingleRefCalibration) for [Anonymous Symbol]
+    vl53l0x.o(.text.writeReg16Bit) refers to i2c.o(.text.I2C_write) for I2C_write
+    vl53l0x.o(.ARM.exidx.text.writeReg16Bit) refers to vl53l0x.o(.text.writeReg16Bit) for [Anonymous Symbol]
+    vl53l0x.o(.text.writeReg32Bit) refers to i2c.o(.text.I2C_write) for I2C_write
+    vl53l0x.o(.ARM.exidx.text.writeReg32Bit) refers to vl53l0x.o(.text.writeReg32Bit) for [Anonymous Symbol]
+    vl53l0x.o(.text.readReg16Bit) refers to i2c.o(.text.I2C_read) for I2C_read
+    vl53l0x.o(.ARM.exidx.text.readReg16Bit) refers to vl53l0x.o(.text.readReg16Bit) for [Anonymous Symbol]
+    vl53l0x.o(.text.getSignalRateLimit) refers to i2c.o(.text.I2C_read) for I2C_read
+    vl53l0x.o(.text.getSignalRateLimit) refers to ffltui.o(.text) for __aeabi_ui2f
+    vl53l0x.o(.text.getSignalRateLimit) refers to fmul.o(.text) for __aeabi_fmul
+    vl53l0x.o(.ARM.exidx.text.getSignalRateLimit) refers to vl53l0x.o(.text.getSignalRateLimit) for [Anonymous Symbol]
+    vl53l0x.o(.text.getSequenceStepEnables) refers to i2c.o(.text.I2C_read) for I2C_read
+    vl53l0x.o(.ARM.exidx.text.getSequenceStepEnables) refers to vl53l0x.o(.text.getSequenceStepEnables) for [Anonymous Symbol]
+    vl53l0x.o(.text.getSequenceStepTimeouts) refers to i2c.o(.text.I2C_read) for I2C_read
+    vl53l0x.o(.text.getSequenceStepTimeouts) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    vl53l0x.o(.ARM.exidx.text.getSequenceStepTimeouts) refers to vl53l0x.o(.text.getSequenceStepTimeouts) for [Anonymous Symbol]
+    vl53l0x.o(.text.getMeasurementTimingBudget) refers to i2c.o(.text.I2C_read) for I2C_read
+    vl53l0x.o(.text.getMeasurementTimingBudget) refers to vl53l0x.o(.text.getSequenceStepTimeouts) for getSequenceStepTimeouts
+    vl53l0x.o(.text.getMeasurementTimingBudget) refers to vl53l0x.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    vl53l0x.o(.ARM.exidx.text.getMeasurementTimingBudget) refers to vl53l0x.o(.text.getMeasurementTimingBudget) for [Anonymous Symbol]
+    vl53l0x.o(.text.getVcselPulsePeriod) refers to i2c.o(.text.I2C_read) for I2C_read
+    vl53l0x.o(.ARM.exidx.text.getVcselPulsePeriod) refers to vl53l0x.o(.text.getVcselPulsePeriod) for [Anonymous Symbol]
+    vl53l0x.o(.text.startContinuous) refers to i2c.o(.text.I2C_write) for I2C_write
+    vl53l0x.o(.text.startContinuous) refers to i2c.o(.text.I2C_read) for I2C_read
+    vl53l0x.o(.text.startContinuous) refers to vl53l0x.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    vl53l0x.o(.ARM.exidx.text.startContinuous) refers to vl53l0x.o(.text.startContinuous) for [Anonymous Symbol]
+    vl53l0x.o(.text.stopContinuous) refers to i2c.o(.text.I2C_write) for I2C_write
+    vl53l0x.o(.ARM.exidx.text.stopContinuous) refers to vl53l0x.o(.text.stopContinuous) for [Anonymous Symbol]
+    vl53l0x.o(.text.readRangeContinuousMillimeters) refers to cw32f003_systick.o(.text.GetTick) for GetTick
+    vl53l0x.o(.text.readRangeContinuousMillimeters) refers to i2c.o(.text.I2C_read) for I2C_read
+    vl53l0x.o(.text.readRangeContinuousMillimeters) refers to i2c.o(.text.I2C_write) for I2C_write
+    vl53l0x.o(.text.readRangeContinuousMillimeters) refers to vl53l0x.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    vl53l0x.o(.ARM.exidx.text.readRangeContinuousMillimeters) refers to vl53l0x.o(.text.readRangeContinuousMillimeters) for [Anonymous Symbol]
+    vl53l0x.o(.text.readRangeSingleMillimeters) refers to i2c.o(.text.I2C_write) for I2C_write
+    vl53l0x.o(.text.readRangeSingleMillimeters) refers to cw32f003_systick.o(.text.GetTick) for GetTick
+    vl53l0x.o(.text.readRangeSingleMillimeters) refers to i2c.o(.text.I2C_read) for I2C_read
+    vl53l0x.o(.text.readRangeSingleMillimeters) refers to vl53l0x.o(.text.readRangeContinuousMillimeters) for readRangeContinuousMillimeters
+    vl53l0x.o(.text.readRangeSingleMillimeters) refers to vl53l0x.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    vl53l0x.o(.ARM.exidx.text.readRangeSingleMillimeters) refers to vl53l0x.o(.text.readRangeSingleMillimeters) for [Anonymous Symbol]
+    vl53l0x.o(.text.timeoutOccurred) refers to vl53l0x.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    vl53l0x.o(.ARM.exidx.text.timeoutOccurred) refers to vl53l0x.o(.text.timeoutOccurred) for [Anonymous Symbol]
+    oled.o(.text.OLED_WR_Byte) refers to i2c.o(.text.I2C_write) for I2C_write
+    oled.o(.ARM.exidx.text.OLED_WR_Byte) refers to oled.o(.text.OLED_WR_Byte) for [Anonymous Symbol]
+    oled.o(.text.OLED_Refresh) refers to i2c.o(.text.I2C_write) for I2C_write
+    oled.o(.text.OLED_Refresh) refers to oled.o(.bss.OLED_GRAM) for OLED_GRAM
+    oled.o(.ARM.exidx.text.OLED_Refresh) refers to oled.o(.text.OLED_Refresh) for [Anonymous Symbol]
+    oled.o(.text.OLED_Clear) refers to memseta.o(.text) for __aeabi_memclr4
+    oled.o(.text.OLED_Clear) refers to oled.o(.text.OLED_Refresh) for OLED_Refresh
+    oled.o(.text.OLED_Clear) refers to oled.o(.bss.OLED_GRAM) for OLED_GRAM
+    oled.o(.ARM.exidx.text.OLED_Clear) refers to oled.o(.text.OLED_Clear) for [Anonymous Symbol]
+    oled.o(.text.OLED_DrawPoint) refers to oled.o(.bss.OLED_GRAM) for OLED_GRAM
+    oled.o(.ARM.exidx.text.OLED_DrawPoint) refers to oled.o(.text.OLED_DrawPoint) for [Anonymous Symbol]
+    oled.o(.text.OLED_DrawLine) refers to oled.o(.bss.OLED_GRAM) for OLED_GRAM
+    oled.o(.ARM.exidx.text.OLED_DrawLine) refers to oled.o(.text.OLED_DrawLine) for [Anonymous Symbol]
+    oled.o(.text.OLED_DrawRectangle) refers to oled.o(.text.OLED_DrawLine) for OLED_DrawLine
+    oled.o(.ARM.exidx.text.OLED_DrawRectangle) refers to oled.o(.text.OLED_DrawRectangle) for [Anonymous Symbol]
+    oled.o(.text.OLED_ShowChar) refers to oled.o(.rodata.asc2_0806) for asc2_0806
+    oled.o(.text.OLED_ShowChar) refers to oled.o(.bss.OLED_GRAM) for OLED_GRAM
+    oled.o(.ARM.exidx.text.OLED_ShowChar) refers to oled.o(.text.OLED_ShowChar) for [Anonymous Symbol]
+    oled.o(.text.OLED_ShowString) refers to oled.o(.text.OLED_ShowChar) for OLED_ShowChar
+    oled.o(.ARM.exidx.text.OLED_ShowString) refers to oled.o(.text.OLED_ShowString) for [Anonymous Symbol]
+    oled.o(.ARM.exidx.text.OLED_Pow) refers to oled.o(.text.OLED_Pow) for [Anonymous Symbol]
+    oled.o(.text.OLED_Init) refers to system_cw32f003.o(.text.FirmwareDelay) for FirmwareDelay
+    oled.o(.text.OLED_Init) refers to i2c.o(.text.I2C_write) for I2C_write
+    oled.o(.text.OLED_Init) refers to memseta.o(.text) for __aeabi_memclr4
+    oled.o(.text.OLED_Init) refers to oled.o(.text.OLED_Refresh) for OLED_Refresh
+    oled.o(.text.OLED_Init) refers to oled.o(.bss.OLED_GRAM) for OLED_GRAM
+    oled.o(.ARM.exidx.text.OLED_Init) refers to oled.o(.text.OLED_Init) for [Anonymous Symbol]
+    ec12.o(.text.EC12_init) refers to cw32f003_gpio.o(.text.GPIO_Init) for GPIO_Init
+    ec12.o(.text.EC12_init) refers to cw32f003_gpio.o(.text.GPIO_ConfigFilter) for GPIO_ConfigFilter
+    ec12.o(.ARM.exidx.text.EC12_init) refers to ec12.o(.text.EC12_init) for [Anonymous Symbol]
+    ec12.o(.text.GPIOB_IRQHandleCallback) refers to app_oled_menu.o(.text.EC12_on_changed) for EC12_on_changed
+    ec12.o(.ARM.exidx.text.GPIOB_IRQHandleCallback) refers to ec12.o(.text.GPIOB_IRQHandleCallback) for [Anonymous Symbol]
+    main.o(.text.RCC_Configuration) refers to cw32f003_flash.o(.text.FLASH_SetLatency) for FLASH_SetLatency
+    main.o(.text.RCC_Configuration) refers to cw32f003_rcc.o(.text.RCC_HSI_Enable) for RCC_HSI_Enable
+    main.o(.text.RCC_Configuration) refers to cw32f003_rcc.o(.text.RCC_SYSCLKSRC_Config) for RCC_SYSCLKSRC_Config
+    main.o(.text.RCC_Configuration) refers to cw32f003_rcc.o(.text.RCC_HCLKPRS_Config) for RCC_HCLKPRS_Config
+    main.o(.text.RCC_Configuration) refers to cw32f003_rcc.o(.text.RCC_PCLKPRS_Config) for RCC_PCLKPRS_Config
+    main.o(.text.RCC_Configuration) refers to cw32f003_systick.o(.text.InitTick) for InitTick
+    main.o(.ARM.exidx.text.RCC_Configuration) refers to main.o(.text.RCC_Configuration) for [Anonymous Symbol]
+    main.o(.text.On_SysTick_Update) refers to task.o(.text.Task_switch_handler) for Task_switch_handler
+    main.o(.ARM.exidx.text.On_SysTick_Update) refers to main.o(.text.On_SysTick_Update) for [Anonymous Symbol]
+    main.o(.text.main) refers to cw32f003_flash.o(.text.FLASH_SetLatency) for FLASH_SetLatency
+    main.o(.text.main) refers to cw32f003_rcc.o(.text.RCC_HSI_Enable) for RCC_HSI_Enable
+    main.o(.text.main) refers to cw32f003_rcc.o(.text.RCC_SYSCLKSRC_Config) for RCC_SYSCLKSRC_Config
+    main.o(.text.main) refers to cw32f003_rcc.o(.text.RCC_HCLKPRS_Config) for RCC_HCLKPRS_Config
+    main.o(.text.main) refers to cw32f003_rcc.o(.text.RCC_PCLKPRS_Config) for RCC_PCLKPRS_Config
+    main.o(.text.main) refers to cw32f003_systick.o(.text.InitTick) for InitTick
+    main.o(.text.main) refers to uart1.o(.text.UART1_init) for UART1_init
+    main.o(.text.main) refers to i2c.o(.text.I2C_init) for I2C_init
+    main.o(.text.main) refers to puts.o(i.puts) for puts
+    main.o(.text.main) refers to task_timer.o(.text.Task_timer_init) for Task_timer_init
+    main.o(.text.main) refers to app_data_transfer.o(.text.App_Data_Transfer_init) for App_Data_Transfer_init
+    main.o(.text.main) refers to app_pid_control.o(.text.App_PID_Control_init) for App_PID_Control_init
+    main.o(.text.main) refers to app_oled_menu.o(.text.App_OLED_Menu_init) for App_OLED_Menu_init
+    main.o(.text.main) refers to task.o(.text.Task_exec_handler) for Task_exec_handler
+    main.o(.ARM.exidx.text.main) refers to main.o(.text.main) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.NMI_Handler) refers to interrupts_cw32f003.o(.text.NMI_Handler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.HardFault_Handler) refers to interrupts_cw32f003.o(.text.HardFault_Handler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.SVC_Handler) refers to interrupts_cw32f003.o(.text.SVC_Handler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.PendSV_Handler) refers to interrupts_cw32f003.o(.text.PendSV_Handler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.WDT_IRQHandler) refers to interrupts_cw32f003.o(.text.WDT_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.LVD_IRQHandler) refers to interrupts_cw32f003.o(.text.LVD_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.FLASHRAM_IRQHandler) refers to interrupts_cw32f003.o(.text.FLASHRAM_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.SYSCTRL_IRQHandler) refers to interrupts_cw32f003.o(.text.SYSCTRL_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.GPIOA_IRQHandler) refers to interrupts_cw32f003.o(.text.GPIOA_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.text.GPIOB_IRQHandler) refers to ec12.o(.text.GPIOB_IRQHandleCallback) for GPIOB_IRQHandleCallback
+    interrupts_cw32f003.o(.ARM.exidx.text.GPIOB_IRQHandler) refers to interrupts_cw32f003.o(.text.GPIOB_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.GPIOC_IRQHandler) refers to interrupts_cw32f003.o(.text.GPIOC_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.ADC_IRQHandler) refers to interrupts_cw32f003.o(.text.ADC_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.ATIM_IRQHandler) refers to interrupts_cw32f003.o(.text.ATIM_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.VC1_IRQHandler) refers to interrupts_cw32f003.o(.text.VC1_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.VC2_IRQHandler) refers to interrupts_cw32f003.o(.text.VC2_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.GTIM_IRQHandler) refers to interrupts_cw32f003.o(.text.GTIM_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.text.BTIM1_IRQHandler) refers to cw32f003_btim.o(.text.BTIM_GetITStatus) for BTIM_GetITStatus
+    interrupts_cw32f003.o(.text.BTIM1_IRQHandler) refers to cw32f003_btim.o(.text.BTIM_ClearITPendingBit) for BTIM_ClearITPendingBit
+    interrupts_cw32f003.o(.text.BTIM1_IRQHandler) refers to task_timer.o(.text.on_btim1_callback) for on_btim1_callback
+    interrupts_cw32f003.o(.ARM.exidx.text.BTIM1_IRQHandler) refers to interrupts_cw32f003.o(.text.BTIM1_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.text.BTIM2_IRQHandler) refers to cw32f003_btim.o(.text.BTIM_GetITStatus) for BTIM_GetITStatus
+    interrupts_cw32f003.o(.text.BTIM2_IRQHandler) refers to cw32f003_btim.o(.text.BTIM_ClearITPendingBit) for BTIM_ClearITPendingBit
+    interrupts_cw32f003.o(.text.BTIM2_IRQHandler) refers to app_adc.o(.text.on_btim2_callback) for on_btim2_callback
+    interrupts_cw32f003.o(.ARM.exidx.text.BTIM2_IRQHandler) refers to interrupts_cw32f003.o(.text.BTIM2_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.BTIM3_IRQHandler) refers to interrupts_cw32f003.o(.text.BTIM3_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.I2C_IRQHandler) refers to interrupts_cw32f003.o(.text.I2C_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.SPI_IRQHandler) refers to interrupts_cw32f003.o(.text.SPI_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.text.UART1_IRQHandler) refers to cw32f003_uart.o(.text.USART_GetITStatus) for USART_GetITStatus
+    interrupts_cw32f003.o(.text.UART1_IRQHandler) refers to cw32f003_uart.o(.text.USART_ReceiveData_8bit) for USART_ReceiveData_8bit
+    interrupts_cw32f003.o(.text.UART1_IRQHandler) refers to cw32f003_uart.o(.text.USART_SendData_8bit) for USART_SendData_8bit
+    interrupts_cw32f003.o(.text.UART1_IRQHandler) refers to cw32f003_uart.o(.text.USART_ClearITPendingBit) for USART_ClearITPendingBit
+    interrupts_cw32f003.o(.ARM.exidx.text.UART1_IRQHandler) refers to interrupts_cw32f003.o(.text.UART1_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.UART2_IRQHandler) refers to interrupts_cw32f003.o(.text.UART2_IRQHandler) for [Anonymous Symbol]
+    interrupts_cw32f003.o(.ARM.exidx.text.AWT_IRQHandler) refers to interrupts_cw32f003.o(.text.AWT_IRQHandler) for [Anonymous Symbol]
+    task.o(.text.Task_switch_handler) refers to task.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    task.o(.ARM.exidx.text.Task_switch_handler) refers to task.o(.text.Task_switch_handler) for [Anonymous Symbol]
+    task.o(.text.Task_exec_handler) refers to task.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    task.o(.ARM.exidx.text.Task_exec_handler) refers to task.o(.text.Task_exec_handler) for [Anonymous Symbol]
+    task.o(.text.Task_get_task_id) refers to task.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    task.o(.ARM.exidx.text.Task_get_task_id) refers to task.o(.text.Task_get_task_id) for [Anonymous Symbol]
+    task.o(.text.Task_get_task_state) refers to task.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    task.o(.ARM.exidx.text.Task_get_task_state) refers to task.o(.text.Task_get_task_state) for [Anonymous Symbol]
+    task.o(.text.Task_suspend) refers to task.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    task.o(.ARM.exidx.text.Task_suspend) refers to task.o(.text.Task_suspend) for [Anonymous Symbol]
+    task.o(.text.Task_resume) refers to task.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    task.o(.ARM.exidx.text.Task_resume) refers to task.o(.text.Task_resume) for [Anonymous Symbol]
+    task.o(.data..L_MergedGlobals) refers to app_oled_menu.o(.text.App_OLED_Menu_keys) for App_OLED_Menu_keys
+    task.o(.data..L_MergedGlobals) refers to app_oled_menu.o(.text.App_OLED_Menu_screen) for App_OLED_Menu_screen
+    task.o(.data..L_MergedGlobals) refers to app_data_transfer.o(.text.App_Data_Transfer_task) for App_Data_Transfer_task
+    task.o(.data..L_MergedGlobals) refers to app_pid_control.o(.text.App_PID_Control_task) for App_PID_Control_task
+    task_timer.o(.text.Btim1_Init) refers to cw32f003_btim.o(.text.BTIM_TimeBaseInit) for BTIM_TimeBaseInit
+    task_timer.o(.text.Btim1_Init) refers to cw32f003_btim.o(.text.BTIM_ITConfig) for BTIM_ITConfig
+    task_timer.o(.text.Btim1_Init) refers to cw32f003_btim.o(.text.BTIM_Cmd) for BTIM_Cmd
+    task_timer.o(.ARM.exidx.text.Btim1_Init) refers to task_timer.o(.text.Btim1_Init) for [Anonymous Symbol]
+    task_timer.o(.text.Task_timer_init) refers to cw32f003_btim.o(.text.BTIM_TimeBaseInit) for BTIM_TimeBaseInit
+    task_timer.o(.text.Task_timer_init) refers to cw32f003_btim.o(.text.BTIM_ITConfig) for BTIM_ITConfig
+    task_timer.o(.text.Task_timer_init) refers to cw32f003_btim.o(.text.BTIM_Cmd) for BTIM_Cmd
+    task_timer.o(.ARM.exidx.text.Task_timer_init) refers to task_timer.o(.text.Task_timer_init) for [Anonymous Symbol]
+    task_timer.o(.text.on_btim1_callback) refers to puts.o(i.puts) for puts
+    task_timer.o(.text.on_btim1_callback) refers to task.o(.text.Task_switch_handler) for Task_switch_handler
+    task_timer.o(.ARM.exidx.text.on_btim1_callback) refers to task_timer.o(.text.on_btim1_callback) for [Anonymous Symbol]
+    app_oled_menu.o(.text.EC12_on_changed) refers to servo.o(.text.Servo_get_angle) for Servo_get_angle
+    app_oled_menu.o(.text.EC12_on_changed) refers to fadd.o(.text) for __aeabi_fadd
+    app_oled_menu.o(.text.EC12_on_changed) refers to servo.o(.text.Servo_set_angle) for Servo_set_angle
+    app_oled_menu.o(.text.EC12_on_changed) refers to f2d.o(.text) for __aeabi_f2d
+    app_oled_menu.o(.text.EC12_on_changed) refers to printfa.o(i.__0printf) for __2printf
+    app_oled_menu.o(.text.EC12_on_changed) refers to app_oled_menu.o(.bss..L_MergedGlobals.21) for [Anonymous Symbol]
+    app_oled_menu.o(.text.EC12_on_changed) refers to app_oled_menu.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    app_oled_menu.o(.ARM.exidx.text.EC12_on_changed) refers to app_oled_menu.o(.text.EC12_on_changed) for [Anonymous Symbol]
+    app_oled_menu.o(.text.handle_menu_key_down) refers to printfa.o(i.__0printf) for __2printf
+    app_oled_menu.o(.text.handle_menu_key_down) refers to app_oled_menu.o(.bss..L_MergedGlobals.21) for [Anonymous Symbol]
+    app_oled_menu.o(.text.handle_menu_key_down) refers to app_oled_menu.o(.rodata.str1.1) for [Anonymous Symbol]
+    app_oled_menu.o(.text.handle_menu_key_down) refers to app_oled_menu.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    app_oled_menu.o(.ARM.exidx.text.handle_menu_key_down) refers to app_oled_menu.o(.text.handle_menu_key_down) for [Anonymous Symbol]
+    app_oled_menu.o(.text.Keys_on_key_down) refers to printfa.o(i.__0printf) for __2printf
+    app_oled_menu.o(.text.Keys_on_key_down) refers to app_oled_menu.o(.bss..L_MergedGlobals.21) for [Anonymous Symbol]
+    app_oled_menu.o(.text.Keys_on_key_down) refers to app_oled_menu.o(.rodata.str1.1) for [Anonymous Symbol]
+    app_oled_menu.o(.text.Keys_on_key_down) refers to app_oled_menu.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    app_oled_menu.o(.ARM.exidx.text.Keys_on_key_down) refers to app_oled_menu.o(.text.Keys_on_key_down) for [Anonymous Symbol]
+    app_oled_menu.o(.ARM.exidx.text.Keys_on_key_up) refers to app_oled_menu.o(.text.Keys_on_key_up) for [Anonymous Symbol]
+    app_oled_menu.o(.text.App_OLED_Menu_init) refers to keys.o(.text.Keys_init) for Keys_init
+    app_oled_menu.o(.text.App_OLED_Menu_init) refers to ec12.o(.text.EC12_init) for EC12_init
+    app_oled_menu.o(.text.App_OLED_Menu_init) refers to oled.o(.text.OLED_Init) for OLED_Init
+    app_oled_menu.o(.ARM.exidx.text.App_OLED_Menu_init) refers to app_oled_menu.o(.text.App_OLED_Menu_init) for [Anonymous Symbol]
+    app_oled_menu.o(.text.App_OLED_Menu_keys) refers to keys.o(.text.Keys_scan) for Keys_scan
+    app_oled_menu.o(.ARM.exidx.text.App_OLED_Menu_keys) refers to app_oled_menu.o(.text.App_OLED_Menu_keys) for [Anonymous Symbol]
+    app_oled_menu.o(.text.handle_node_level) refers to oled.o(.text.OLED_Clear) for OLED_Clear
+    app_oled_menu.o(.text.handle_node_level) refers to servo.o(.text.Servo_get_angle) for Servo_get_angle
+    app_oled_menu.o(.text.handle_node_level) refers to oled.o(.text.OLED_ShowString) for OLED_ShowString
+    app_oled_menu.o(.text.handle_node_level) refers to f2d.o(.text) for __aeabi_f2d
+    app_oled_menu.o(.text.handle_node_level) refers to dmul.o(.text) for __aeabi_dmul
+    app_oled_menu.o(.text.handle_node_level) refers to cos.o(i.cos) for cos
+    app_oled_menu.o(.text.handle_node_level) refers to d2f.o(.text) for __aeabi_d2f
+    app_oled_menu.o(.text.handle_node_level) refers to sin.o(i.sin) for sin
+    app_oled_menu.o(.text.handle_node_level) refers to fadd.o(.text) for __aeabi_fsub
+    app_oled_menu.o(.text.handle_node_level) refers to ffixi.o(.text) for __aeabi_f2iz
+    app_oled_menu.o(.text.handle_node_level) refers to oled.o(.text.OLED_DrawLine) for OLED_DrawLine
+    app_oled_menu.o(.text.handle_node_level) refers to printfa.o(i.__0sprintf) for __2sprintf
+    app_oled_menu.o(.text.handle_node_level) refers to fflti.o(.text) for __aeabi_i2f
+    app_oled_menu.o(.text.handle_node_level) refers to fmul.o(.text) for __aeabi_fmul
+    app_oled_menu.o(.text.handle_node_level) refers to oled.o(.text.OLED_Refresh) for OLED_Refresh
+    app_oled_menu.o(.text.handle_node_level) refers to app_oled_menu.o(.bss..L_MergedGlobals.21) for [Anonymous Symbol]
+    app_oled_menu.o(.text.handle_node_level) refers to app_pid_control.o(.data..L_MergedGlobals) for kp
+    app_oled_menu.o(.text.handle_node_level) refers to app_oled_menu.o(.rodata.str1.1) for [Anonymous Symbol]
+    app_oled_menu.o(.text.handle_node_level) refers to app_adc.o(.bss..L_MergedGlobals) for Vrst
+    app_oled_menu.o(.ARM.exidx.text.handle_node_level) refers to app_oled_menu.o(.text.handle_node_level) for [Anonymous Symbol]
+    app_oled_menu.o(.text.App_OLED_Menu_screen) refers to app_oled_menu.o(.text.handle_node_level) for handle_node_level
+    app_oled_menu.o(.text.App_OLED_Menu_screen) refers to oled.o(.text.OLED_Clear) for OLED_Clear
+    app_oled_menu.o(.text.App_OLED_Menu_screen) refers to oled.o(.text.OLED_ShowString) for OLED_ShowString
+    app_oled_menu.o(.text.App_OLED_Menu_screen) refers to printfa.o(i.__0sprintf) for __2sprintf
+    app_oled_menu.o(.text.App_OLED_Menu_screen) refers to oled.o(.text.OLED_Refresh) for OLED_Refresh
+    app_oled_menu.o(.text.App_OLED_Menu_screen) refers to app_oled_menu.o(.bss..L_MergedGlobals.21) for [Anonymous Symbol]
+    app_oled_menu.o(.text.App_OLED_Menu_screen) refers to app_oled_menu.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    app_oled_menu.o(.ARM.exidx.text.App_OLED_Menu_screen) refers to app_oled_menu.o(.text.App_OLED_Menu_screen) for [Anonymous Symbol]
+    app_oled_menu.o(.data..L_MergedGlobals) refers to app_oled_menu.o(.rodata.str1.1) for [Anonymous Symbol]
+    app_pid_control.o(.text.App_PID_Control_init) refers to servo.o(.text.Servo_init) for Servo_init
+    app_pid_control.o(.text.App_PID_Control_init) refers to vl53l0x.o(.text.VL53L0X_init) for VL53L0X_init
+    app_pid_control.o(.text.App_PID_Control_init) refers to cw32f003_systick.o(.text.SysTickDelay) for SysTickDelay
+    app_pid_control.o(.text.App_PID_Control_init) refers to puts.o(i.puts) for puts
+    app_pid_control.o(.text.App_PID_Control_init) refers to vl53l0x.o(.text.startContinuous) for startContinuous
+    app_pid_control.o(.ARM.exidx.text.App_PID_Control_init) refers to app_pid_control.o(.text.App_PID_Control_init) for [Anonymous Symbol]
+    app_pid_control.o(.text.App_PID_Control_task) refers to vl53l0x.o(.text.readRangeContinuousMillimeters) for readRangeContinuousMillimeters
+    app_pid_control.o(.text.App_PID_Control_task) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    app_pid_control.o(.text.App_PID_Control_task) refers to tools.o(.text.Mean_Value_Filter) for Mean_Value_Filter
+    app_pid_control.o(.text.App_PID_Control_task) refers to printfa.o(i.__0printf) for __2printf
+    app_pid_control.o(.text.App_PID_Control_task) refers to fflti.o(.text) for __aeabi_i2f
+    app_pid_control.o(.text.App_PID_Control_task) refers to fmul.o(.text) for __aeabi_fmul
+    app_pid_control.o(.text.App_PID_Control_task) refers to fadd.o(.text) for __aeabi_fadd
+    app_pid_control.o(.text.App_PID_Control_task) refers to fcmpgt.o(.text) for __aeabi_fcmpgt
+    app_pid_control.o(.text.App_PID_Control_task) refers to servo.o(.text.Servo_set_angle) for Servo_set_angle
+    app_pid_control.o(.text.App_PID_Control_task) refers to app_oled_menu.o(.bss..L_MergedGlobals.21) for menu_level
+    app_pid_control.o(.text.App_PID_Control_task) refers to app_pid_control.o(.bss..L_MergedGlobals.2) for [Anonymous Symbol]
+    app_pid_control.o(.text.App_PID_Control_task) refers to app_pid_control.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    app_pid_control.o(.ARM.exidx.text.App_PID_Control_task) refers to app_pid_control.o(.text.App_PID_Control_task) for [Anonymous Symbol]
+    app_data_transfer.o(.text.App_Data_Transfer_init) refers to bluetooth.o(.text.Bluetooth_init) for Bluetooth_init
+    app_data_transfer.o(.ARM.exidx.text.App_Data_Transfer_init) refers to app_data_transfer.o(.text.App_Data_Transfer_init) for [Anonymous Symbol]
+    app_data_transfer.o(.text.App_Data_Transfer_task) refers to f2d.o(.text) for __aeabi_f2d
+    app_data_transfer.o(.text.App_Data_Transfer_task) refers to dmul.o(.text) for __aeabi_dmul
+    app_data_transfer.o(.text.App_Data_Transfer_task) refers to printfa.o(i.__0sprintf) for __2sprintf
+    app_data_transfer.o(.text.App_Data_Transfer_task) refers to bluetooth.o(.text.Bluetooth_send_string) for Bluetooth_send_string
+    app_data_transfer.o(.text.App_Data_Transfer_task) refers to app_adc.o(.bss..L_MergedGlobals) for Vrst
+    app_data_transfer.o(.text.App_Data_Transfer_task) refers to app_pid_control.o(.data..L_MergedGlobals) for current_mm
+    app_data_transfer.o(.text.App_Data_Transfer_task) refers to app_data_transfer.o(.bss.App_Data_Transfer_task.data) for [Anonymous Symbol]
+    app_data_transfer.o(.ARM.exidx.text.App_Data_Transfer_task) refers to app_data_transfer.o(.text.App_Data_Transfer_task) for [Anonymous Symbol]
+    app_adc.o(.text.on_btim2_callback) refers to adc_collector.o(.text.ADC_Collector_get) for ADC_Collector_get
+    app_adc.o(.text.on_btim2_callback) refers to app_adc.o(.bss.on_btim2_callback.Cnt) for [Anonymous Symbol]
+    app_adc.o(.ARM.exidx.text.on_btim2_callback) refers to app_adc.o(.text.on_btim2_callback) for [Anonymous Symbol]
+    app_adc.o(.text.Btim2_Init) refers to cw32f003_btim.o(.text.BTIM_TimeBaseInit) for BTIM_TimeBaseInit
+    app_adc.o(.text.Btim2_Init) refers to cw32f003_btim.o(.text.BTIM_ITConfig) for BTIM_ITConfig
+    app_adc.o(.text.Btim2_Init) refers to cw32f003_btim.o(.text.BTIM_Cmd) for BTIM_Cmd
+    app_adc.o(.ARM.exidx.text.Btim2_Init) refers to app_adc.o(.text.Btim2_Init) for [Anonymous Symbol]
+    app_adc.o(.text.App_ADC_init) refers to cw32f003_btim.o(.text.BTIM_TimeBaseInit) for BTIM_TimeBaseInit
+    app_adc.o(.text.App_ADC_init) refers to cw32f003_btim.o(.text.BTIM_ITConfig) for BTIM_ITConfig
+    app_adc.o(.text.App_ADC_init) refers to cw32f003_btim.o(.text.BTIM_Cmd) for BTIM_Cmd
+    app_adc.o(.text.App_ADC_init) refers to adc_collector.o(.text.ADC_Collector_init) for ADC_Collector_init
+    app_adc.o(.ARM.exidx.text.App_ADC_init) refers to app_adc.o(.text.App_ADC_init) for [Anonymous Symbol]
+    app_adc.o(.text.App_ADC_task) refers to adc_collector.o(.text.ADC_Collector_get_voltage) for ADC_Collector_get_voltage
+    app_adc.o(.text.App_ADC_task) refers to adc_collector.o(.text.ADC_Collector_get_current) for ADC_Collector_get_current
+    app_adc.o(.text.App_ADC_task) refers to app_adc.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    app_adc.o(.ARM.exidx.text.App_ADC_task) refers to app_adc.o(.text.App_ADC_task) for [Anonymous Symbol]
+    cos.o(i.__softfp_cos) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cos.o(i.__softfp_cos) refers to cos.o(i.cos) for cos
+    cos.o(i.cos) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cos.o(i.cos) refers to errno.o(i.__set_errno) for __set_errno
+    cos.o(i.cos) refers to dunder.o(i.__mathlib_dbl_invalid) for __mathlib_dbl_invalid
+    cos.o(i.cos) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    cos.o(i.cos) refers to rred.o(i.__ieee754_rem_pio2) for __ieee754_rem_pio2
+    cos.o(i.cos) refers to sin_i.o(i.__kernel_sin) for __kernel_sin
+    cos.o(i.cos) refers to cos_i.o(i.__kernel_cos) for __kernel_cos
+    sin.o(i.__softfp_sin) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin.o(i.__softfp_sin) refers to sin.o(i.sin) for sin
+    sin.o(i.sin) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin.o(i.sin) refers to errno.o(i.__set_errno) for __set_errno
+    sin.o(i.sin) refers to dunder.o(i.__mathlib_dbl_invalid) for __mathlib_dbl_invalid
+    sin.o(i.sin) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    sin.o(i.sin) refers to rred.o(i.__ieee754_rem_pio2) for __ieee754_rem_pio2
+    sin.o(i.sin) refers to cos_i.o(i.__kernel_cos) for __kernel_cos
+    sin.o(i.sin) refers to sin_i.o(i.__kernel_sin) for __kernel_sin
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    puts.o(i.puts) refers to uart1.o(.text.fputc) for fputc
+    puts.o(i.puts) refers to stdout.o(.data) for __stdout
+    puts_e.o(.text) refers to uart1.o(.text.fputc) for fputc
+    puts_e.o(.text) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0fprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0fprintf$bare) refers to uart1.o(.text.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0printf$bare) refers to uart1.o(.text.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printfb.o(i.__0vfprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vfprintf$bare) refers to uart1.o(.text.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vprintf$bare) refers to uart1.o(.text.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printf0.o(i.__0fprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0fprintf$0) refers to uart1.o(.text.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0printf$0) refers to uart1.o(.text.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf0.o(i.__0vfprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vfprintf$0) refers to uart1.o(.text.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vprintf$0) refers to uart1.o(.text.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf1.o(i.__0fprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0fprintf$1) refers to uart1.o(.text.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0printf$1) refers to uart1.o(.text.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i.__0vfprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vfprintf$1) refers to uart1.o(.text.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vprintf$1) refers to uart1.o(.text.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i._printf_core) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    printf2.o(i.__0fprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0fprintf$2) refers to uart1.o(.text.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0printf$2) refers to uart1.o(.text.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf2.o(i.__0vfprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vfprintf$2) refers to uart1.o(.text.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vprintf$2) refers to uart1.o(.text.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf3.o(i.__0fprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0fprintf$3) refers to uart1.o(.text.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0printf$3) refers to uart1.o(.text.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i.__0vfprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vfprintf$3) refers to uart1.o(.text.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vprintf$3) refers to uart1.o(.text.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i._printf_core) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    printf4.o(i.__0fprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0fprintf$4) refers to uart1.o(.text.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0printf$4) refers to uart1.o(.text.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i.__0vfprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vfprintf$4) refers to uart1.o(.text.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vprintf$4) refers to uart1.o(.text.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf5.o(i.__0fprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0fprintf$5) refers to uart1.o(.text.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0printf$5) refers to uart1.o(.text.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i.__0vfprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vfprintf$5) refers to uart1.o(.text.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vprintf$5) refers to uart1.o(.text.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf6.o(i.__0fprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0fprintf$6) refers to uart1.o(.text.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0printf$6) refers to uart1.o(.text.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i.__0vfprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vfprintf$6) refers to uart1.o(.text.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vprintf$6) refers to uart1.o(.text.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_pre_padding) for _printf_pre_padding
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_post_padding) for _printf_post_padding
+    printf6.o(i._printf_core) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    printf7.o(i.__0fprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0fprintf$7) refers to uart1.o(.text.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0printf$7) refers to uart1.o(.text.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i.__0vfprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vfprintf$7) refers to uart1.o(.text.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vprintf$7) refers to uart1.o(.text.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_pre_padding) for _printf_pre_padding
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_post_padding) for _printf_post_padding
+    printf7.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf8.o(i.__0fprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0fprintf$8) refers to uart1.o(.text.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0printf$8) refers to uart1.o(.text.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i.__0vfprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vfprintf$8) refers to uart1.o(.text.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vprintf$8) refers to uart1.o(.text.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_pre_padding) for _printf_pre_padding
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_post_padding) for _printf_post_padding
+    printf8.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i.__0fprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0fprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0fprintf) refers to uart1.o(.text.fputc) for fputc
+    printfa.o(i.__0printf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0printf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0printf) refers to uart1.o(.text.fputc) for fputc
+    printfa.o(i.__0printf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0snprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0snprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0snprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0sprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0sprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0sprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i.__0vfprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vfprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vfprintf) refers to uart1.o(.text.fputc) for fputc
+    printfa.o(i.__0vprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vprintf) refers to uart1.o(.text.fputc) for fputc
+    printfa.o(i.__0vprintf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0vsnprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0vsprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i._fp_digits) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._fp_digits) refers to dmul.o(.text) for __aeabi_dmul
+    printfa.o(i._fp_digits) refers to ddiv.o(.text) for __aeabi_ddiv
+    printfa.o(i._fp_digits) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    printfa.o(i._fp_digits) refers to dadd.o(.text) for __aeabi_dadd
+    printfa.o(i._fp_digits) refers to dfixul.o(.text) for __aeabi_d2ulz
+    printfa.o(i._fp_digits) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_pre_padding) for _printf_pre_padding
+    printfa.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i._printf_core) refers to printfa.o(i._fp_digits) for _fp_digits
+    printfa.o(i._printf_core) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    printfa.o(i._printf_post_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_pre_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._snputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._sputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fadd.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    fmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fdiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fdiv.o(.text) refers to fepilogue.o(.text) for _float_round
+    dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    fcmplt.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fcmpge.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fcmpgt.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dcmpgt.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fflti.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fflti.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    ffltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ffltui.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    ffixi.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ffixui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixi.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixi.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    f2d.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    d2f.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    d2f.o(.text) refers to fepilogue.o(.text) for _float_round
+    cos_i.o(i.__kernel_cos) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cos_i.o(i.__kernel_cos) refers to dfixi.o(.text) for __aeabi_d2iz
+    cos_i.o(i.__kernel_cos) refers to dmul.o(.text) for __aeabi_dmul
+    cos_i.o(i.__kernel_cos) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    cos_i.o(i.__kernel_cos) refers to dadd.o(.text) for __aeabi_dsub
+    cos_i.o(i.__kernel_cos) refers to dscalb.o(.text) for __ARM_scalbn
+    cos_i.o(i.__kernel_cos) refers to cos_i.o(.constdata) for .constdata
+    cos_i.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dunder.o(i.__mathlib_dbl_divzero) refers to ddiv.o(.text) for __aeabi_ddiv
+    dunder.o(i.__mathlib_dbl_infnan) refers to dscalb.o(.text) for __ARM_scalbn
+    dunder.o(i.__mathlib_dbl_infnan2) refers to dadd.o(.text) for __aeabi_dadd
+    dunder.o(i.__mathlib_dbl_invalid) refers to ddiv.o(.text) for __aeabi_ddiv
+    dunder.o(i.__mathlib_dbl_overflow) refers to dscalb.o(.text) for __ARM_scalbn
+    dunder.o(i.__mathlib_dbl_posinfnan) refers to dmul.o(.text) for __aeabi_dmul
+    dunder.o(i.__mathlib_dbl_underflow) refers to dscalb.o(.text) for __ARM_scalbn
+    rred.o(i.__ieee754_rem_pio2) refers (Special) to iusefp.o(.text) for __I$use$fp
+    rred.o(i.__ieee754_rem_pio2) refers to dadd.o(.text) for __aeabi_dsub
+    rred.o(i.__ieee754_rem_pio2) refers to dmul.o(.text) for __aeabi_dmul
+    rred.o(i.__ieee754_rem_pio2) refers to dfixi.o(.text) for __aeabi_d2iz
+    rred.o(i.__ieee754_rem_pio2) refers to dflti.o(.text) for __aeabi_i2d
+    rred.o(i.__ieee754_rem_pio2) refers to rred.o(i.__ARM_common_ll_muluu) for __ARM_common_ll_muluu
+    rred.o(i.__ieee754_rem_pio2) refers to dfltui.o(.text) for __aeabi_ui2d
+    rred.o(i.__ieee754_rem_pio2) refers to dscalb.o(.text) for __ARM_scalbn
+    rred.o(i.__ieee754_rem_pio2) refers to rred.o(.constdata) for .constdata
+    rred.o(i.__use_accurate_range_reduction) refers (Special) to iusefp.o(.text) for __I$use$fp
+    rred.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin_i.o(i.__kernel_sin) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin_i.o(i.__kernel_sin) refers to fpclassify.o(i.__ARM_fpclassify) for __ARM_fpclassify
+    sin_i.o(i.__kernel_sin) refers to dunder.o(i.__mathlib_dbl_underflow) for __mathlib_dbl_underflow
+    sin_i.o(i.__kernel_sin) refers to dmul.o(.text) for __aeabi_dmul
+    sin_i.o(i.__kernel_sin) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    sin_i.o(i.__kernel_sin) refers to dscalb.o(.text) for __ARM_scalbn
+    sin_i.o(i.__kernel_sin) refers to dadd.o(.text) for __aeabi_dsub
+    sin_i.o(i.__kernel_sin) refers to sin_i.o(.constdata) for .constdata
+    sin_i.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_cw32f003.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_cw32f003.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(.text.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(.text.main) for main
+    idiv_div0.o(.text) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    errno.o(i.__aeabi_errno_addr) refers to errno.o(.data) for .data
+    errno.o(i.__read_errno) refers to errno.o(.data) for .data
+    errno.o(i.__set_errno) refers to errno.o(.data) for .data
+    fepilogue.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    depilogue.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    depilogue.o(.text) refers to depilogue.o(i.__ARM_clz) for __ARM_clz
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dfixul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixul.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixul.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    cdrcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fpclassify.o(i.__ARM_fpclassify) refers (Special) to iusefp.o(.text) for __I$use$fp
+    poly.o(i.__kernel_poly) refers (Special) to iusefp.o(.text) for __I$use$fp
+    poly.o(i.__kernel_poly) refers to dmul.o(.text) for __aeabi_dmul
+    poly.o(i.__kernel_poly) refers to dadd.o(.text) for __aeabi_dadd
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+    dscalb.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dflti.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dflti.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dfltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfltui.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    rred.o(i.__ARM_common_ll_muluu) refers (Special) to iusefp.o(.text) for __I$use$fp
+    depilogue.o(i.__ARM_clz) refers (Special) to iusefp.o(.text) for __I$use$fp
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing system_cw32f003.o(.text), (0 bytes).
+    Removing system_cw32f003.o(.text.SystemCoreClockUpdate), (16 bytes).
+    Removing system_cw32f003.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing system_cw32f003.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing system_cw32f003.o(.ARM.exidx.text.FirmwareDelay), (8 bytes).
+    Removing system_cw32f003.o(.text.MemClr), (16 bytes).
+    Removing system_cw32f003.o(.ARM.exidx.text.MemClr), (8 bytes).
+    Removing startup_cw32f003.o(HEAP), (512 bytes).
+    Removing cw32f003_adc.o(.text), (0 bytes).
+    Removing cw32f003_adc.o(.text.ADC_GetITStatusAll), (12 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_GetITStatusAll), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_GetITStatus), (16 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_GetITStatus), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_ClearITPendingAll), (16 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_ClearITPendingAll), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_ClearITPendingBit), (16 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_ClearITPendingBit), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_EnableIrq), (48 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_EnableIrq), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_EnableNvic), (48 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_EnableNvic), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_DisableIrq), (64 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_DisableIrq), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_DisableNvic), (48 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_DisableNvic), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_WdtConfig), (72 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_WdtConfig), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_Init), (116 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_Init), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_StructInit), (22 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_StructInit), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_WdtInit), (24 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_WdtInit), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_ExtTrigCfg), (28 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_ExtTrigCfg), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_DeInit), (24 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_DeInit), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_SoftwareStartConvCmd), (24 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_SoftwareStartConvCmd), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_Enable), (44 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_Enable), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_Disable), (16 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_Disable), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_SingleChCommon), (240 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_SingleChCommon), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_BufEnSingleCh), (48 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_BufEnSingleCh), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_SingleChOneModeCfg), (24 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_SingleChOneModeCfg), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_SingleChMoreModeCfg), (44 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_SingleChMoreModeCfg), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_SingleChContinuousModeCfg), (28 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_SingleChContinuousModeCfg), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_SerialChCommon), (300 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_SerialChCommon), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_Sqr0ChannelCfg), (68 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_Sqr0ChannelCfg), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_Sqr01ChannelCfg), (116 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_Sqr01ChannelCfg), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_Sqr02ChannelCfg), (156 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_Sqr02ChannelCfg), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_Sqr03ChannelCfg), (192 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_Sqr03ChannelCfg), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_SerialChContinuousModeCfg), (28 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_SerialChContinuousModeCfg), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_SerialChScanModeCfg), (28 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_SerialChScanModeCfg), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_SerialChMoreModeCfg), (44 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_SerialChMoreModeCfg), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_SerialChBreakModeCfg), (28 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_SerialChBreakModeCfg), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_BufEnSerialCh), (48 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_BufEnSerialCh), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_GetConversionValue), (12 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_GetConversionValue), (8 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_GetSqr0Result), (8 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_GetSqr1Result), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_GetSqr2Result), (16 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_GetSqr2Result), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_GetSqr3Result), (16 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_GetSqr3Result), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_GetAccResult), (16 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_GetAccResult), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_ClrAccResult), (20 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_ClrAccResult), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_SetVref), (52 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_SetVref), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_SetAlign), (20 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_SetAlign), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_SetDiscard), (20 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_SetDiscard), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_SetTs), (20 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_SetTs), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_GetTsVref1V5), (72 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_GetTsVref1V5), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_GetTsVref2V5), (72 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_GetTsVref2V5), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_AutoStop), (20 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_AutoStop), (8 bytes).
+    Removing cw32f003_adc.o(.text.ADC_ITConfig), (28 bytes).
+    Removing cw32f003_adc.o(.ARM.exidx.text.ADC_ITConfig), (8 bytes).
+    Removing cw32f003_awt.o(.text), (0 bytes).
+    Removing cw32f003_awt.o(.text.AWT_DeInit), (24 bytes).
+    Removing cw32f003_awt.o(.ARM.exidx.text.AWT_DeInit), (8 bytes).
+    Removing cw32f003_awt.o(.text.AWT_TimeCntInit), (36 bytes).
+    Removing cw32f003_awt.o(.ARM.exidx.text.AWT_TimeCntInit), (8 bytes).
+    Removing cw32f003_awt.o(.text.AWT_TimeCntStructInit), (24 bytes).
+    Removing cw32f003_awt.o(.ARM.exidx.text.AWT_TimeCntStructInit), (8 bytes).
+    Removing cw32f003_awt.o(.text.AWT_Cmd), (24 bytes).
+    Removing cw32f003_awt.o(.ARM.exidx.text.AWT_Cmd), (8 bytes).
+    Removing cw32f003_awt.o(.text.AWT_ITConfig), (28 bytes).
+    Removing cw32f003_awt.o(.ARM.exidx.text.AWT_ITConfig), (8 bytes).
+    Removing cw32f003_awt.o(.text.AWT_GetITStatus), (16 bytes).
+    Removing cw32f003_awt.o(.ARM.exidx.text.AWT_GetITStatus), (8 bytes).
+    Removing cw32f003_awt.o(.text.AWT_ClearITPendingBit), (16 bytes).
+    Removing cw32f003_awt.o(.ARM.exidx.text.AWT_ClearITPendingBit), (8 bytes).
+    Removing cw32f003_awt.o(.text.AWT_ClkSourceConfig), (20 bytes).
+    Removing cw32f003_awt.o(.ARM.exidx.text.AWT_ClkSourceConfig), (8 bytes).
+    Removing cw32f003_awt.o(.text.AWT_PrescalerConfig), (20 bytes).
+    Removing cw32f003_awt.o(.ARM.exidx.text.AWT_PrescalerConfig), (8 bytes).
+    Removing cw32f003_awt.o(.text.AWT_GetCounter), (12 bytes).
+    Removing cw32f003_awt.o(.ARM.exidx.text.AWT_GetCounter), (8 bytes).
+    Removing cw32f003_awt.o(.text.AWT_GetAutoreload), (12 bytes).
+    Removing cw32f003_awt.o(.ARM.exidx.text.AWT_GetAutoreload), (8 bytes).
+    Removing cw32f003_awt.o(.text.AWT_GetClkSource), (16 bytes).
+    Removing cw32f003_awt.o(.ARM.exidx.text.AWT_GetClkSource), (8 bytes).
+    Removing cw32f003_awt.o(.text.AWT_GetPrescaler), (16 bytes).
+    Removing cw32f003_awt.o(.ARM.exidx.text.AWT_GetPrescaler), (8 bytes).
+    Removing cw32f003_btim.o(.text), (0 bytes).
+    Removing cw32f003_btim.o(.text.BTIM_DeInit), (24 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_DeInit), (8 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_TimeBaseInit), (8 bytes).
+    Removing cw32f003_btim.o(.text.BTIM_TimeBaseStructInit), (16 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_TimeBaseStructInit), (8 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_Cmd), (8 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_ITConfig), (8 bytes).
+    Removing cw32f003_btim.o(.text.BTIM_PrescalerConfig), (34 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_PrescalerConfig), (8 bytes).
+    Removing cw32f003_btim.o(.text.BTIM_ModeConfig), (12 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_ModeConfig), (8 bytes).
+    Removing cw32f003_btim.o(.text.BTIM_SelectInputTrigger), (12 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_SelectInputTrigger), (8 bytes).
+    Removing cw32f003_btim.o(.text.BTIM_SelectETRInputPolarity), (12 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_SelectETRInputPolarity), (8 bytes).
+    Removing cw32f003_btim.o(.text.BTIM_SelectOnePulseMode), (12 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_SelectOnePulseMode), (8 bytes).
+    Removing cw32f003_btim.o(.text.BTIM_OutputToggleCmd), (18 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_OutputToggleCmd), (8 bytes).
+    Removing cw32f003_btim.o(.text.BTIM_ETRConfig), (24 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_ETRConfig), (8 bytes).
+    Removing cw32f003_btim.o(.text.BTIM_SetCounter), (4 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_SetCounter), (8 bytes).
+    Removing cw32f003_btim.o(.text.BTIM_SetAutoreload), (4 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_SetAutoreload), (8 bytes).
+    Removing cw32f003_btim.o(.text.BTIM_GetCounter), (6 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_GetCounter), (8 bytes).
+    Removing cw32f003_btim.o(.text.BTIM_GetAutoreload), (6 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_GetAutoreload), (8 bytes).
+    Removing cw32f003_btim.o(.text.BTIM_GetPrescaler), (8 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_GetPrescaler), (8 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_GetITStatus), (8 bytes).
+    Removing cw32f003_btim.o(.ARM.exidx.text.BTIM_ClearITPendingBit), (8 bytes).
+    Removing cw32f003_crc.o(.text), (0 bytes).
+    Removing cw32f003_crc.o(.text.CRC16_Calc_8bit), (112 bytes).
+    Removing cw32f003_crc.o(.ARM.exidx.text.CRC16_Calc_8bit), (8 bytes).
+    Removing cw32f003_debug.o(.text), (0 bytes).
+    Removing cw32f003_debug.o(.text.DBGMCU_Config), (28 bytes).
+    Removing cw32f003_debug.o(.ARM.exidx.text.DBGMCU_Config), (8 bytes).
+    Removing cw32f003_digitalsign.o(.text), (0 bytes).
+    Removing cw32f003_digitalsign.o(.text.DIGITALSIGN_GetChipType), (80 bytes).
+    Removing cw32f003_digitalsign.o(.ARM.exidx.text.DIGITALSIGN_GetChipType), (8 bytes).
+    Removing cw32f003_digitalsign.o(.text.DIGITALSIGN_GetPinCount), (12 bytes).
+    Removing cw32f003_digitalsign.o(.ARM.exidx.text.DIGITALSIGN_GetPinCount), (8 bytes).
+    Removing cw32f003_digitalsign.o(.text.DIGITALSIGN_GetFlashSize), (12 bytes).
+    Removing cw32f003_digitalsign.o(.ARM.exidx.text.DIGITALSIGN_GetFlashSize), (8 bytes).
+    Removing cw32f003_digitalsign.o(.text.DIGITALSIGN_GetRamSize), (12 bytes).
+    Removing cw32f003_digitalsign.o(.ARM.exidx.text.DIGITALSIGN_GetRamSize), (8 bytes).
+    Removing cw32f003_digitalsign.o(.text.DIGITALSIGN_GetChipUid), (48 bytes).
+    Removing cw32f003_digitalsign.o(.ARM.exidx.text.DIGITALSIGN_GetChipUid), (8 bytes).
+    Removing cw32f003_flash.o(.text), (0 bytes).
+    Removing cw32f003_flash.o(.ARM.exidx.text.FLASH_SetLatency), (8 bytes).
+    Removing cw32f003_flash.o(.text.FLASH_GetReadOutLevel), (16 bytes).
+    Removing cw32f003_flash.o(.ARM.exidx.text.FLASH_GetReadOutLevel), (8 bytes).
+    Removing cw32f003_flash.o(.text.FLASH_SetReadOutLevel), (48 bytes).
+    Removing cw32f003_flash.o(.ARM.exidx.text.FLASH_SetReadOutLevel), (8 bytes).
+    Removing cw32f003_flash.o(.text.FLASH_UnlockAllPages), (16 bytes).
+    Removing cw32f003_flash.o(.ARM.exidx.text.FLASH_UnlockAllPages), (8 bytes).
+    Removing cw32f003_flash.o(.text.FLASH_LockAllPages), (16 bytes).
+    Removing cw32f003_flash.o(.ARM.exidx.text.FLASH_LockAllPages), (8 bytes).
+    Removing cw32f003_flash.o(.text.FLASH_UnlockPage), (32 bytes).
+    Removing cw32f003_flash.o(.ARM.exidx.text.FLASH_UnlockPage), (8 bytes).
+    Removing cw32f003_flash.o(.text.FLASH_UnlockPages), (128 bytes).
+    Removing cw32f003_flash.o(.ARM.exidx.text.FLASH_UnlockPages), (8 bytes).
+    Removing cw32f003_flash.o(.text.FLASH_ErasePage), (112 bytes).
+    Removing cw32f003_flash.o(.ARM.exidx.text.FLASH_ErasePage), (8 bytes).
+    Removing cw32f003_flash.o(.text.FLASH_ErasePages), (140 bytes).
+    Removing cw32f003_flash.o(.ARM.exidx.text.FLASH_ErasePages), (8 bytes).
+    Removing cw32f003_flash.o(.text.FLASH_WirteBytes), (376 bytes).
+    Removing cw32f003_flash.o(.ARM.exidx.text.FLASH_WirteBytes), (8 bytes).
+    Removing cw32f003_flash.o(.text.FLASH_LockPage), (32 bytes).
+    Removing cw32f003_flash.o(.ARM.exidx.text.FLASH_LockPage), (8 bytes).
+    Removing cw32f003_flash.o(.text.FLASH_LockPages), (128 bytes).
+    Removing cw32f003_flash.o(.ARM.exidx.text.FLASH_LockPages), (8 bytes).
+    Removing cw32f003_flash.o(.text.FLASH_ITConfig), (28 bytes).
+    Removing cw32f003_flash.o(.ARM.exidx.text.FLASH_ITConfig), (8 bytes).
+    Removing cw32f003_flash.o(.text.FLASH_GetITStatus), (16 bytes).
+    Removing cw32f003_flash.o(.ARM.exidx.text.FLASH_GetITStatus), (8 bytes).
+    Removing cw32f003_flash.o(.text.FLASH_ClearITPendingBit), (16 bytes).
+    Removing cw32f003_flash.o(.ARM.exidx.text.FLASH_ClearITPendingBit), (8 bytes).
+    Removing cw32f003_flash.o(.text.FLASH_GetStatus), (40 bytes).
+    Removing cw32f003_flash.o(.ARM.exidx.text.FLASH_GetStatus), (8 bytes).
+    Removing cw32f003_gpio.o(.text), (0 bytes).
+    Removing cw32f003_gpio.o(.ARM.exidx.text.GPIO_Init), (8 bytes).
+    Removing cw32f003_gpio.o(.text.GPIO_DeInit), (56 bytes).
+    Removing cw32f003_gpio.o(.ARM.exidx.text.GPIO_DeInit), (8 bytes).
+    Removing cw32f003_gpio.o(.ARM.exidx.text.GPIO_ReadPin), (8 bytes).
+    Removing cw32f003_gpio.o(.ARM.exidx.text.GPIO_WritePin), (8 bytes).
+    Removing cw32f003_gpio.o(.text.GPIO_TogglePin), (4 bytes).
+    Removing cw32f003_gpio.o(.ARM.exidx.text.GPIO_TogglePin), (8 bytes).
+    Removing cw32f003_gpio.o(.text.GPIO_SWD2GPIO), (20 bytes).
+    Removing cw32f003_gpio.o(.ARM.exidx.text.GPIO_SWD2GPIO), (8 bytes).
+    Removing cw32f003_gpio.o(.text.GPIO_GPIO2SWD), (24 bytes).
+    Removing cw32f003_gpio.o(.ARM.exidx.text.GPIO_GPIO2SWD), (8 bytes).
+    Removing cw32f003_gpio.o(.text.GPIO_NRST2GPIO), (20 bytes).
+    Removing cw32f003_gpio.o(.ARM.exidx.text.GPIO_NRST2GPIO), (8 bytes).
+    Removing cw32f003_gpio.o(.text.GPIO_GPIO2NRST), (24 bytes).
+    Removing cw32f003_gpio.o(.ARM.exidx.text.GPIO_GPIO2NRST), (8 bytes).
+    Removing cw32f003_gpio.o(.ARM.exidx.text.GPIO_ConfigFilter), (8 bytes).
+    Removing cw32f003_gtim.o(.text), (0 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_DeInit), (24 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_DeInit), (8 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_TimeBaseInit), (8 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_EncodeInit), (88 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_EncodeInit), (8 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_OCInit), (8 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_ICInit), (52 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_ICInit), (8 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_Cmd), (8 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_ETRConfig), (32 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_ETRConfig), (8 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_ITRConfig), (36 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_ITRConfig), (8 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_ICChannelConfig), (28 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_ICChannelConfig), (8 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_SetPrescaler), (20 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_SetPrescaler), (8 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_SetReloadValue), (12 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_SetReloadValue), (8 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_SetCounterValue), (12 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_SetCounterValue), (8 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_SetCompare1), (12 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_SetCompare1), (8 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_SetCompare2), (12 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_SetCompare2), (8 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_SetCompare3), (8 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_SetCompare4), (12 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_SetCompare4), (8 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_GetCapture1), (12 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_GetCapture1), (8 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_GetCapture2), (12 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_GetCapture2), (8 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_GetCapture3), (12 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_GetCapture3), (8 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_GetCapture4), (12 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_GetCapture4), (8 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_ITConfig), (8 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_GetITStatus), (16 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_GetITStatus), (8 bytes).
+    Removing cw32f003_gtim.o(.text.GTIM_ClearITPendingBit), (12 bytes).
+    Removing cw32f003_gtim.o(.ARM.exidx.text.GTIM_ClearITPendingBit), (8 bytes).
+    Removing cw32f003_i2c.o(.text), (0 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_BaudGeneratorEnable), (24 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_BaudGeneratorEnable), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_SetBaud), (12 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_SetBaud), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_GenerateSTART), (68 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_GenerateSTART), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_GenerateSTOP), (24 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_GenerateSTOP), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_AcknowledgeConfig), (24 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_AcknowledgeConfig), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_FilterConfig), (24 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_FilterConfig), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_SetOwnSlaveAddress0), (20 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_SetOwnSlaveAddress0), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_SetOwnSlaveAddress1), (20 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_SetOwnSlaveAddress1), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_SetOwnSlaveAddress2), (20 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_SetOwnSlaveAddress2), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_GcConfig), (24 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_GcConfig), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_Cmd), (24 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_Cmd), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_GetIrq), (16 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_GetIrq), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_ClearIrq), (16 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_ClearIrq), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_GetState), (12 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_GetState), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_Master_Init), (84 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_Master_Init), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_Slave_Init), (92 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_Slave_Init), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_DeInit), (36 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_DeInit), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_SendData), (12 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_SendData), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_ReceiveData), (12 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_ReceiveData), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_Send7bitAddress), (20 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_Send7bitAddress), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_SoftwareResetCmd), (28 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_SoftwareResetCmd), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_MasterReadEepomData), (408 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_MasterReadEepomData), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_MasterWriteEepromData), (280 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_MasterWriteEepromData), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_MasterRecDataFromSlave), (368 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_MasterRecDataFromSlave), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_MasterSendDataToSlave), (240 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_MasterSendDataToSlave), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_SlaveSendDataToMaster), (100 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_SlaveSendDataToMaster), (8 bytes).
+    Removing cw32f003_i2c.o(.text.I2C_SlaveRecDataFromMaster), (92 bytes).
+    Removing cw32f003_i2c.o(.ARM.exidx.text.I2C_SlaveRecDataFromMaster), (8 bytes).
+    Removing cw32f003_iwdt.o(.text), (0 bytes).
+    Removing cw32f003_iwdt.o(.text.IWDT_DeInit), (24 bytes).
+    Removing cw32f003_iwdt.o(.ARM.exidx.text.IWDT_DeInit), (8 bytes).
+    Removing cw32f003_iwdt.o(.text.IWDT_Init), (104 bytes).
+    Removing cw32f003_iwdt.o(.ARM.exidx.text.IWDT_Init), (8 bytes).
+    Removing cw32f003_iwdt.o(.text.IWDT_Cmd), (16 bytes).
+    Removing cw32f003_iwdt.o(.ARM.exidx.text.IWDT_Cmd), (8 bytes).
+    Removing cw32f003_iwdt.o(.text.IWDT_Refresh), (16 bytes).
+    Removing cw32f003_iwdt.o(.ARM.exidx.text.IWDT_Refresh), (8 bytes).
+    Removing cw32f003_iwdt.o(.text.IWDT_Unlock), (16 bytes).
+    Removing cw32f003_iwdt.o(.ARM.exidx.text.IWDT_Unlock), (8 bytes).
+    Removing cw32f003_iwdt.o(.text.IWDT_Lock), (16 bytes).
+    Removing cw32f003_iwdt.o(.ARM.exidx.text.IWDT_Lock), (8 bytes).
+    Removing cw32f003_iwdt.o(.text.IWDT_Stop), (24 bytes).
+    Removing cw32f003_iwdt.o(.ARM.exidx.text.IWDT_Stop), (8 bytes).
+    Removing cw32f003_iwdt.o(.text.IWDT_SetPrescaler), (72 bytes).
+    Removing cw32f003_iwdt.o(.ARM.exidx.text.IWDT_SetPrescaler), (8 bytes).
+    Removing cw32f003_iwdt.o(.text.IWDT_SetWindowValue), (56 bytes).
+    Removing cw32f003_iwdt.o(.ARM.exidx.text.IWDT_SetWindowValue), (8 bytes).
+    Removing cw32f003_iwdt.o(.text.IWDT_SetReloadValue), (56 bytes).
+    Removing cw32f003_iwdt.o(.ARM.exidx.text.IWDT_SetReloadValue), (8 bytes).
+    Removing cw32f003_iwdt.o(.text.IWDT_ITConfig), (72 bytes).
+    Removing cw32f003_iwdt.o(.ARM.exidx.text.IWDT_ITConfig), (8 bytes).
+    Removing cw32f003_iwdt.o(.text.IWDT_GetFlagStatus), (16 bytes).
+    Removing cw32f003_iwdt.o(.ARM.exidx.text.IWDT_GetFlagStatus), (8 bytes).
+    Removing cw32f003_iwdt.o(.text.IWDT_ClearOVFlag), (16 bytes).
+    Removing cw32f003_iwdt.o(.ARM.exidx.text.IWDT_ClearOVFlag), (8 bytes).
+    Removing cw32f003_iwdt.o(.text.IWDT_GetCounterValue), (40 bytes).
+    Removing cw32f003_iwdt.o(.ARM.exidx.text.IWDT_GetCounterValue), (8 bytes).
+    Removing cw32f003_lvd.o(.text), (0 bytes).
+    Removing cw32f003_lvd.o(.text.LVD_EnableNvic), (44 bytes).
+    Removing cw32f003_lvd.o(.ARM.exidx.text.LVD_EnableNvic), (8 bytes).
+    Removing cw32f003_lvd.o(.text.LVD_DisableNvic), (28 bytes).
+    Removing cw32f003_lvd.o(.ARM.exidx.text.LVD_DisableNvic), (8 bytes).
+    Removing cw32f003_lvd.o(.text.LVD_TrigConfig), (28 bytes).
+    Removing cw32f003_lvd.o(.ARM.exidx.text.LVD_TrigConfig), (8 bytes).
+    Removing cw32f003_lvd.o(.text.LVD_EnableIrq), (60 bytes).
+    Removing cw32f003_lvd.o(.ARM.exidx.text.LVD_EnableIrq), (8 bytes).
+    Removing cw32f003_lvd.o(.text.LVD_DisableIrq), (52 bytes).
+    Removing cw32f003_lvd.o(.ARM.exidx.text.LVD_DisableIrq), (8 bytes).
+    Removing cw32f003_lvd.o(.text.LVD_Init), (100 bytes).
+    Removing cw32f003_lvd.o(.ARM.exidx.text.LVD_Init), (8 bytes).
+    Removing cw32f003_lvd.o(.text.LVD_Disable), (16 bytes).
+    Removing cw32f003_lvd.o(.ARM.exidx.text.LVD_Disable), (8 bytes).
+    Removing cw32f003_lvd.o(.text.LVD_DeInit), (60 bytes).
+    Removing cw32f003_lvd.o(.ARM.exidx.text.LVD_DeInit), (8 bytes).
+    Removing cw32f003_lvd.o(.text.LVD_Enable), (16 bytes).
+    Removing cw32f003_lvd.o(.ARM.exidx.text.LVD_Enable), (8 bytes).
+    Removing cw32f003_lvd.o(.text.LVD_GetIrqStatus), (16 bytes).
+    Removing cw32f003_lvd.o(.ARM.exidx.text.LVD_GetIrqStatus), (8 bytes).
+    Removing cw32f003_lvd.o(.text.LVD_GetFlagStatus), (16 bytes).
+    Removing cw32f003_lvd.o(.ARM.exidx.text.LVD_GetFlagStatus), (8 bytes).
+    Removing cw32f003_lvd.o(.text.LVD_ClearIrq), (16 bytes).
+    Removing cw32f003_lvd.o(.ARM.exidx.text.LVD_ClearIrq), (8 bytes).
+    Removing cw32f003_lvd.o(.text.LVD_GetFilterResult), (16 bytes).
+    Removing cw32f003_lvd.o(.ARM.exidx.text.LVD_GetFilterResult), (8 bytes).
+    Removing cw32f003_pwr.o(.text), (0 bytes).
+    Removing cw32f003_pwr.o(.text.PWR_Config), (28 bytes).
+    Removing cw32f003_pwr.o(.ARM.exidx.text.PWR_Config), (8 bytes).
+    Removing cw32f003_pwr.o(.text.PWR_GotoLpmMode), (4 bytes).
+    Removing cw32f003_pwr.o(.ARM.exidx.text.PWR_GotoLpmMode), (8 bytes).
+    Removing cw32f003_ram.o(.text), (0 bytes).
+    Removing cw32f003_ram.o(.text.RAM_ITConfig), (28 bytes).
+    Removing cw32f003_ram.o(.ARM.exidx.text.RAM_ITConfig), (8 bytes).
+    Removing cw32f003_ram.o(.text.RAM_GetITStatus), (16 bytes).
+    Removing cw32f003_ram.o(.ARM.exidx.text.RAM_GetITStatus), (8 bytes).
+    Removing cw32f003_ram.o(.text.RAM_ClearITPendingBit), (16 bytes).
+    Removing cw32f003_ram.o(.ARM.exidx.text.RAM_ClearITPendingBit), (8 bytes).
+    Removing cw32f003_ram.o(.text.RAM_GetErrorAddress), (12 bytes).
+    Removing cw32f003_ram.o(.ARM.exidx.text.RAM_GetErrorAddress), (8 bytes).
+    Removing cw32f003_rcc.o(.text), (0 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_HCLKPRS_Config), (8 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_PCLKPRS_Config), (8 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_SYSCLKSRC_Config), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_SystemCoreClockUpdate), (12 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_SystemCoreClockUpdate), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_Sysctrl_GetHClkFreq), (76 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_Sysctrl_GetHClkFreq), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_CCS_Config), (40 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_CCS_Config), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_LSELOCK_Config), (24 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_LSELOCK_Config), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_WAKEUPCLK_Config), (32 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_WAKEUPCLK_Config), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_LOCKUP_Config), (32 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_LOCKUP_Config), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_SWDIO_Config), (32 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_SWDIO_Config), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_RSTIO_Config), (20 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_RSTIO_Config), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_DeInit), (124 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_DeInit), (8 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_Sysctrl_GetPClkFreq), (8 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_HSI_Enable), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_HSI_Disable), (28 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_HSI_Disable), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_LSI_Enable), (72 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_LSI_Enable), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_LSI_Disable), (28 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_LSI_Disable), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_HEX_Enable), (124 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_HEX_Enable), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_HEX_Disable), (28 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_HEX_Disable), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_SysClk_Switch), (120 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_SysClk_Switch), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_ITConfig), (40 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_ITConfig), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_GetITStatus), (16 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_GetITStatus), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_ClearITPendingBit), (16 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_ClearITPendingBit), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_GetStableFlag), (16 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_GetStableFlag), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_GetAllStableFlag), (12 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_GetAllStableFlag), (8 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_AHBPeriphClk_Enable), (8 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_APBPeriphClk_Enable1), (8 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_APBPeriphClk_Enable2), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_AHBPeriphReset), (28 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_AHBPeriphReset), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_APBPeriphReset1), (28 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_APBPeriphReset1), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_APBPeriphReset2), (28 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_APBPeriphReset2), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_GetRstFlag), (16 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_GetRstFlag), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_GetAllRstFlag), (12 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_GetAllRstFlag), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_ClearRstFlag), (16 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_ClearRstFlag), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_HCLK_OUT), (48 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_HCLK_OUT), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_PCLK_OUT), (56 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_PCLK_OUT), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_MCO_OUT), (52 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_MCO_OUT), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_DEBUG_Config), (28 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_DEBUG_Config), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_BTIM3ITRSelect), (24 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_BTIM3ITRSelect), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_BTIM2ITRSelect), (24 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_BTIM2ITRSelect), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_BTIM1ITRSelect), (24 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_BTIM1ITRSelect), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_GTIMITRSelect), (24 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_GTIMITRSelect), (8 bytes).
+    Removing cw32f003_rcc.o(.text.RCC_ATIMITRSelect), (20 bytes).
+    Removing cw32f003_rcc.o(.ARM.exidx.text.RCC_ATIMITRSelect), (8 bytes).
+    Removing cw32f003_spi.o(.text), (0 bytes).
+    Removing cw32f003_spi.o(.text.SPI_SendData), (12 bytes).
+    Removing cw32f003_spi.o(.ARM.exidx.text.SPI_SendData), (8 bytes).
+    Removing cw32f003_spi.o(.text.SPI_ReceiveData), (12 bytes).
+    Removing cw32f003_spi.o(.ARM.exidx.text.SPI_ReceiveData), (8 bytes).
+    Removing cw32f003_spi.o(.text.SPI_Init), (60 bytes).
+    Removing cw32f003_spi.o(.ARM.exidx.text.SPI_Init), (8 bytes).
+    Removing cw32f003_spi.o(.text.SPI_StructInit), (26 bytes).
+    Removing cw32f003_spi.o(.ARM.exidx.text.SPI_StructInit), (8 bytes).
+    Removing cw32f003_spi.o(.text.SPI_DeInit), (24 bytes).
+    Removing cw32f003_spi.o(.ARM.exidx.text.SPI_DeInit), (8 bytes).
+    Removing cw32f003_spi.o(.text.SPI_Cmd), (24 bytes).
+    Removing cw32f003_spi.o(.ARM.exidx.text.SPI_Cmd), (8 bytes).
+    Removing cw32f003_spi.o(.text.SPI_ITConfig), (28 bytes).
+    Removing cw32f003_spi.o(.ARM.exidx.text.SPI_ITConfig), (8 bytes).
+    Removing cw32f003_spi.o(.text.SPI_GetITStatus), (16 bytes).
+    Removing cw32f003_spi.o(.ARM.exidx.text.SPI_GetITStatus), (8 bytes).
+    Removing cw32f003_spi.o(.text.SPI_ClearITPendingBit), (16 bytes).
+    Removing cw32f003_spi.o(.ARM.exidx.text.SPI_ClearITPendingBit), (8 bytes).
+    Removing cw32f003_spi.o(.text.SPI_GetFlagStatus), (16 bytes).
+    Removing cw32f003_spi.o(.ARM.exidx.text.SPI_GetFlagStatus), (8 bytes).
+    Removing cw32f003_spi.o(.text.SPI_ClearFlag), (16 bytes).
+    Removing cw32f003_spi.o(.ARM.exidx.text.SPI_ClearFlag), (8 bytes).
+    Removing cw32f003_spi.o(.text.SPI_BiDirectionalLineConfig), (12 bytes).
+    Removing cw32f003_spi.o(.ARM.exidx.text.SPI_BiDirectionalLineConfig), (8 bytes).
+    Removing cw32f003_spi.o(.text.SPI_NSSInternalSoftwareConfig), (12 bytes).
+    Removing cw32f003_spi.o(.ARM.exidx.text.SPI_NSSInternalSoftwareConfig), (8 bytes).
+    Removing cw32f003_spi.o(.text.SPI_DataSizeConfig), (20 bytes).
+    Removing cw32f003_spi.o(.ARM.exidx.text.SPI_DataSizeConfig), (8 bytes).
+    Removing cw32f003_spi.o(.text.SPI_MISOOutputConfig), (24 bytes).
+    Removing cw32f003_spi.o(.ARM.exidx.text.SPI_MISOOutputConfig), (8 bytes).
+    Removing cw32f003_spi.o(.text.SPI_FlushSendBuff), (16 bytes).
+    Removing cw32f003_spi.o(.ARM.exidx.text.SPI_FlushSendBuff), (8 bytes).
+    Removing cw32f003_systick.o(.text), (0 bytes).
+    Removing cw32f003_systick.o(.ARM.exidx.text.InitTick), (8 bytes).
+    Removing cw32f003_systick.o(.ARM.exidx.text.GetTick), (8 bytes).
+    Removing cw32f003_systick.o(.ARM.exidx.text.SysTickDelay), (8 bytes).
+    Removing cw32f003_systick.o(.text.SuspendTick), (16 bytes).
+    Removing cw32f003_systick.o(.ARM.exidx.text.SuspendTick), (8 bytes).
+    Removing cw32f003_systick.o(.text.ResumeTick), (16 bytes).
+    Removing cw32f003_systick.o(.ARM.exidx.text.ResumeTick), (8 bytes).
+    Removing cw32f003_systick.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
+    Removing cw32f003_uart.o(.text), (0 bytes).
+    Removing cw32f003_uart.o(.text.USART_SendData), (12 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.USART_SendData), (8 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.USART_SendData_8bit), (8 bytes).
+    Removing cw32f003_uart.o(.text.USART_ReceiveData), (12 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.USART_ReceiveData), (8 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.USART_ReceiveData_8bit), (8 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.USART_Init), (8 bytes).
+    Removing cw32f003_uart.o(.text.USART_StructInit), (22 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.USART_StructInit), (8 bytes).
+    Removing cw32f003_uart.o(.text.USART_ClockInit), (28 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.USART_ClockInit), (8 bytes).
+    Removing cw32f003_uart.o(.text.USART_ClockStructInit), (8 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.USART_ClockStructInit), (8 bytes).
+    Removing cw32f003_uart.o(.text.UART1_DeInit), (24 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.UART1_DeInit), (8 bytes).
+    Removing cw32f003_uart.o(.text.UART2_DeInit), (24 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.UART2_DeInit), (8 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.USART_ITConfig), (8 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.USART_GetITStatus), (8 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.USART_ClearITPendingBit), (8 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.USART_GetFlagStatus), (8 bytes).
+    Removing cw32f003_uart.o(.text.USART_ClearFlag), (8 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.USART_ClearFlag), (8 bytes).
+    Removing cw32f003_uart.o(.text.USART_DirectionModeCmd), (28 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.USART_DirectionModeCmd), (8 bytes).
+    Removing cw32f003_uart.o(.text.USART_InvPinCmd), (28 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.USART_InvPinCmd), (8 bytes).
+    Removing cw32f003_uart.o(.text.USART_HalfDuplexCmd), (16 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.USART_HalfDuplexCmd), (8 bytes).
+    Removing cw32f003_uart.o(.text.USART_SetMultiMode), (32 bytes).
+    Removing cw32f003_uart.o(.ARM.exidx.text.USART_SetMultiMode), (8 bytes).
+    Removing cw32f003_vc.o(.text), (0 bytes).
+    Removing cw32f003_vc.o(.text.VC_EnableNvic), (84 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC_EnableNvic), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1_EnableIrq), (64 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1_EnableIrq), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC2_EnableIrq), (60 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC2_EnableIrq), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1_DisableIrq), (44 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1_DisableIrq), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC_DisableNvic), (40 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC_DisableNvic), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC2_DisableIrq), (44 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC2_DisableIrq), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1_GetFlagStatus), (16 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1_GetFlagStatus), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC2_GetFlagStatus), (16 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC2_GetFlagStatus), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1_ClearIrq), (16 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1_ClearIrq), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC2_ClearIrq), (16 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC2_ClearIrq), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1VC2_DIVInit), (72 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1VC2_DIVInit), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1VC2_DIVDeInit), (16 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1VC2_DIVDeInit), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1VC2_INNInit), (96 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1VC2_INNInit), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1_ChannelInit), (160 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1_ChannelInit), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC2_ChannelInit), (160 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC2_ChannelInit), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC_DeInit), (84 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC_DeInit), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1_ChannelDeInit), (44 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1_ChannelDeInit), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC2_ChannelDeInit), (44 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC2_ChannelDeInit), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1_EnableChannel), (44 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1_EnableChannel), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC2_EnableChannel), (44 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC2_EnableChannel), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1_DisableChannel), (16 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1_DisableChannel), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC2_DisableChannel), (16 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC2_DisableChannel), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1_EnableFilter), (16 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1_EnableFilter), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC2_EnableFilter), (16 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC2_EnableFilter), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1_DisableFilter), (16 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1_DisableFilter), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC2_DisableFilter), (16 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC2_DisableFilter), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1VC2_OutInit), (8 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1VC2_OutInit), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1_OutputCfg), (28 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1_OutputCfg), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC2_OutputCfg), (28 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC2_OutputCfg), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1VC2_BlankInit), (12 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1VC2_BlankInit), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1_BlankCfg), (32 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1_BlankCfg), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC2_BlankCfg), (32 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC2_BlankCfg), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1_WindowEnable), (24 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1_WindowEnable), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC2_WindowEnable), (24 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC2_WindowEnable), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1_PolarityCfg), (24 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1_PolarityCfg), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC2_PolarityCfg), (24 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC2_PolarityCfg), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1_ITConfig), (28 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1_ITConfig), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC2_ITConfig), (28 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC2_ITConfig), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC1_GetEnableStatus), (16 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC1_GetEnableStatus), (8 bytes).
+    Removing cw32f003_vc.o(.text.VC2_GetEnableStatus), (16 bytes).
+    Removing cw32f003_vc.o(.ARM.exidx.text.VC2_GetEnableStatus), (8 bytes).
+    Removing cw32f003_wwdt.o(.text), (0 bytes).
+    Removing cw32f003_wwdt.o(.text.WWDT_DeInit), (24 bytes).
+    Removing cw32f003_wwdt.o(.ARM.exidx.text.WWDT_DeInit), (8 bytes).
+    Removing cw32f003_wwdt.o(.text.WWDT_Init), (56 bytes).
+    Removing cw32f003_wwdt.o(.ARM.exidx.text.WWDT_Init), (8 bytes).
+    Removing cw32f003_wwdt.o(.text.WWDT_Cmd), (16 bytes).
+    Removing cw32f003_wwdt.o(.ARM.exidx.text.WWDT_Cmd), (8 bytes).
+    Removing cw32f003_wwdt.o(.text.WWDT_Refresh), (20 bytes).
+    Removing cw32f003_wwdt.o(.ARM.exidx.text.WWDT_Refresh), (8 bytes).
+    Removing cw32f003_wwdt.o(.text.WWDT_SetPrescaler), (20 bytes).
+    Removing cw32f003_wwdt.o(.ARM.exidx.text.WWDT_SetPrescaler), (8 bytes).
+    Removing cw32f003_wwdt.o(.text.WWDT_SetWindowValue), (20 bytes).
+    Removing cw32f003_wwdt.o(.ARM.exidx.text.WWDT_SetWindowValue), (8 bytes).
+    Removing cw32f003_wwdt.o(.text.WWDT_GetCounterValue), (16 bytes).
+    Removing cw32f003_wwdt.o(.ARM.exidx.text.WWDT_GetCounterValue), (8 bytes).
+    Removing cw32f003_wwdt.o(.text.WWDT_GetWindowValue), (16 bytes).
+    Removing cw32f003_wwdt.o(.ARM.exidx.text.WWDT_GetWindowValue), (8 bytes).
+    Removing cw32f003_wwdt.o(.text.WWDT_EnableIT), (20 bytes).
+    Removing cw32f003_wwdt.o(.ARM.exidx.text.WWDT_EnableIT), (8 bytes).
+    Removing cw32f003_wwdt.o(.text.WWDT_GetFlagStatus), (12 bytes).
+    Removing cw32f003_wwdt.o(.ARM.exidx.text.WWDT_GetFlagStatus), (8 bytes).
+    Removing cw32f003_wwdt.o(.text.WWDT_ClearFlag), (16 bytes).
+    Removing cw32f003_wwdt.o(.ARM.exidx.text.WWDT_ClearFlag), (8 bytes).
+    Removing cw32f003_atim.o(.text), (0 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_DeInit), (24 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_DeInit), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_Init), (88 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_Init), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_Cmd), (20 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_Cmd), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_ITConfig), (28 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_ITConfig), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_GetITStatus), (16 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_GetITStatus), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_ClearITPendingBit), (12 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_ClearITPendingBit), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_SetReloadValue), (12 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_SetReloadValue), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_CH1Config), (28 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_CH1Config), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_CH2Config), (28 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_CH2Config), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_CH3Config), (28 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_CH3Config), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_CH4Config), (28 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_CH4Config), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_IC1AInit), (40 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_IC1AInit), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_IC1BInit), (44 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_IC1BInit), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_IC2AInit), (44 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_IC2AInit), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_IC2BInit), (44 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_IC2BInit), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_IC3AInit), (44 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_IC3AInit), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_IC3BInit), (44 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_IC3BInit), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_OC1AInit), (76 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_OC1AInit), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_OC1BInit), (68 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_OC1BInit), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_OC2AInit), (80 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_OC2AInit), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_OC2BInit), (68 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_OC2BInit), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_OC3AInit), (80 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_OC3AInit), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_OC3BInit), (68 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_OC3BInit), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_OC4Init), (36 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_OC4Init), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_PWMOutputConfig), (64 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_PWMOutputConfig), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_CtrlPWMOutputs), (24 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_CtrlPWMOutputs), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_ETRSelect), (12 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_ETRSelect), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_ETRConfig), (24 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_ETRConfig), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_BrakeConfig), (24 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_BrakeConfig), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_ADCTriggerConfig), (32 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_ADCTriggerConfig), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_GetCapture1A), (12 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_GetCapture1A), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_GetCapture2A), (12 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_GetCapture2A), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_GetCapture3A), (12 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_GetCapture3A), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_GetCapture1B), (12 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_GetCapture1B), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_GetCapture2B), (12 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_GetCapture2B), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_GetCapture3B), (12 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_GetCapture3B), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_SetCompare1A), (12 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_SetCompare1A), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_SetCompare2A), (12 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_SetCompare2A), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_SetCompare3A), (12 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_SetCompare3A), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_SetCompare1B), (12 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_SetCompare1B), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_SetCompare2B), (12 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_SetCompare2B), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_SetCompare3B), (12 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_SetCompare3B), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_SetCompare4), (12 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_SetCompare4), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_MasterModeConfig), (20 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_MasterModeConfig), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_SlaverModeConfig), (24 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_SlaverModeConfig), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_TriggerSelect), (24 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_TriggerSelect), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_UpdateEventSelect), (24 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_UpdateEventSelect), (8 bytes).
+    Removing cw32f003_atim.o(.text.ATIM_ITRSelect), (20 bytes).
+    Removing cw32f003_atim.o(.ARM.exidx.text.ATIM_ITRSelect), (8 bytes).
+    Removing uart1.o(.text), (0 bytes).
+    Removing uart1.o(.text.GPIO_Configuration), (84 bytes).
+    Removing uart1.o(.ARM.exidx.text.GPIO_Configuration), (8 bytes).
+    Removing uart1.o(.text.UART_Configuration), (48 bytes).
+    Removing uart1.o(.ARM.exidx.text.UART_Configuration), (8 bytes).
+    Removing uart1.o(.ARM.exidx.text.UART1_init), (8 bytes).
+    Removing uart1.o(.text.UART1_SendString), (56 bytes).
+    Removing uart1.o(.ARM.exidx.text.UART1_SendString), (8 bytes).
+    Removing uart1.o(.text.UART1_SendDataArray), (54 bytes).
+    Removing uart1.o(.ARM.exidx.text.UART1_SendDataArray), (8 bytes).
+    Removing uart1.o(.ARM.exidx.text.fputc), (8 bytes).
+    Removing i2c.o(.text), (0 bytes).
+    Removing i2c.o(.ARM.exidx.text.I2C_init), (8 bytes).
+    Removing i2c.o(.ARM.exidx.text.I2C_write), (8 bytes).
+    Removing i2c.o(.ARM.exidx.text.send), (8 bytes).
+    Removing i2c.o(.text.I2C_write2), (268 bytes).
+    Removing i2c.o(.ARM.exidx.text.I2C_write2), (8 bytes).
+    Removing i2c.o(.ARM.exidx.text.I2C_read), (8 bytes).
+    Removing i2c.o(.ARM.exidx.text.wait_ack), (8 bytes).
+    Removing tools.o(.text), (0 bytes).
+    Removing tools.o(.ARM.exidx.text.Mean_Value_Filter), (8 bytes).
+    Removing adc_collector.o(.text), (0 bytes).
+    Removing adc_collector.o(.text.ADC_Collector_init), (148 bytes).
+    Removing adc_collector.o(.ARM.exidx.text.ADC_Collector_init), (8 bytes).
+    Removing adc_collector.o(.ARM.exidx.text.ADC_Collector_get), (8 bytes).
+    Removing adc_collector.o(.text.ADC_Collector_get_voltage), (36 bytes).
+    Removing adc_collector.o(.ARM.exidx.text.ADC_Collector_get_voltage), (8 bytes).
+    Removing adc_collector.o(.text.ADC_Collector_get_current), (44 bytes).
+    Removing adc_collector.o(.ARM.exidx.text.ADC_Collector_get_current), (8 bytes).
+    Removing adc_collector.o(.bss.Volt_ADC_Value), (2 bytes).
+    Removing bluetooth.o(.text), (0 bytes).
+    Removing bluetooth.o(.ARM.exidx.text.Bluetooth_init), (8 bytes).
+    Removing bluetooth.o(.ARM.exidx.text.Bluetooth_send_string), (8 bytes).
+    Removing bluetooth.o(.text.Bluetooth_send_data), (64 bytes).
+    Removing bluetooth.o(.ARM.exidx.text.Bluetooth_send_data), (8 bytes).
+    Removing servo.o(.text), (0 bytes).
+    Removing servo.o(.text.Servo_motor_config), (76 bytes).
+    Removing servo.o(.ARM.exidx.text.Servo_motor_config), (8 bytes).
+    Removing servo.o(.ARM.exidx.text.Servo_init), (8 bytes).
+    Removing servo.o(.ARM.exidx.text.Servo_set_angle), (8 bytes).
+    Removing servo.o(.ARM.exidx.text.Servo_get_angle), (8 bytes).
+    Removing keys.o(.text), (0 bytes).
+    Removing keys.o(.ARM.exidx.text.Keys_init), (8 bytes).
+    Removing keys.o(.ARM.exidx.text.Keys_scan), (8 bytes).
+    Removing vl53l0x.o(.text), (0 bytes).
+    Removing vl53l0x.o(.text.setTimeout), (12 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.setTimeout), (8 bytes).
+    Removing vl53l0x.o(.text.getTimeout), (12 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.getTimeout), (8 bytes).
+    Removing vl53l0x.o(.text.writeRegList), (44 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.writeRegList), (8 bytes).
+    Removing vl53l0x.o(.text.writeReg), (24 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.writeReg), (8 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.VL53L0X_init), (8 bytes).
+    Removing vl53l0x.o(.text.readReg), (24 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.readReg), (8 bytes).
+    Removing vl53l0x.o(.text.setSignalRateLimit), (88 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.setSignalRateLimit), (8 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.getSpadInfo), (8 bytes).
+    Removing vl53l0x.o(.text.readMulti), (16 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.readMulti), (8 bytes).
+    Removing vl53l0x.o(.text.writeMulti), (24 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.writeMulti), (8 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.setMeasurementTimingBudget), (8 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.performSingleRefCalibration), (8 bytes).
+    Removing vl53l0x.o(.text.writeReg16Bit), (28 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.writeReg16Bit), (8 bytes).
+    Removing vl53l0x.o(.text.writeReg32Bit), (36 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.writeReg32Bit), (8 bytes).
+    Removing vl53l0x.o(.text.readReg16Bit), (32 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.readReg16Bit), (8 bytes).
+    Removing vl53l0x.o(.text.getSignalRateLimit), (44 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.getSignalRateLimit), (8 bytes).
+    Removing vl53l0x.o(.text.getSequenceStepEnables), (54 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.getSequenceStepEnables), (8 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.getSequenceStepTimeouts), (8 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.getMeasurementTimingBudget), (8 bytes).
+    Removing vl53l0x.o(.text.getVcselPulsePeriod), (60 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.getVcselPulsePeriod), (8 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.startContinuous), (8 bytes).
+    Removing vl53l0x.o(.text.stopContinuous), (100 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.stopContinuous), (8 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.readRangeContinuousMillimeters), (8 bytes).
+    Removing vl53l0x.o(.text.readRangeSingleMillimeters), (224 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.readRangeSingleMillimeters), (8 bytes).
+    Removing vl53l0x.o(.text.timeoutOccurred), (16 bytes).
+    Removing vl53l0x.o(.ARM.exidx.text.timeoutOccurred), (8 bytes).
+    Removing oled.o(.text), (0 bytes).
+    Removing oled.o(.text.OLED_WR_Byte), (26 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_WR_Byte), (8 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_Refresh), (8 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_Clear), (8 bytes).
+    Removing oled.o(.text.OLED_DrawPoint), (48 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_DrawPoint), (8 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_DrawLine), (8 bytes).
+    Removing oled.o(.text.OLED_DrawRectangle), (136 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_DrawRectangle), (8 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_ShowChar), (8 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_ShowString), (8 bytes).
+    Removing oled.o(.text.OLED_Pow), (68 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_Pow), (8 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_Init), (8 bytes).
+    Removing oled.o(.rodata.asc2_1206), (1092 bytes).
+    Removing oled.o(.rodata.Hzk1), (0 bytes).
+    Removing ec12.o(.text), (0 bytes).
+    Removing ec12.o(.ARM.exidx.text.EC12_init), (8 bytes).
+    Removing ec12.o(.ARM.exidx.text.GPIOB_IRQHandleCallback), (8 bytes).
+    Removing main.o(.text), (0 bytes).
+    Removing main.o(.text.RCC_Configuration), (48 bytes).
+    Removing main.o(.ARM.exidx.text.RCC_Configuration), (8 bytes).
+    Removing main.o(.ARM.exidx.text.On_SysTick_Update), (8 bytes).
+    Removing main.o(.ARM.exidx.text.main), (8 bytes).
+    Removing main.o(.ARM.use_no_argv), (4 bytes).
+    Removing interrupts_cw32f003.o(.text), (0 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.NMI_Handler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.HardFault_Handler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.SVC_Handler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.PendSV_Handler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.WDT_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.LVD_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.FLASHRAM_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.SYSCTRL_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.GPIOA_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.GPIOB_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.GPIOC_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.ADC_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.ATIM_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.VC1_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.VC2_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.GTIM_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.BTIM1_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.BTIM2_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.BTIM3_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.I2C_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.SPI_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.UART1_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.UART2_IRQHandler), (8 bytes).
+    Removing interrupts_cw32f003.o(.ARM.exidx.text.AWT_IRQHandler), (8 bytes).
+    Removing task.o(.text), (0 bytes).
+    Removing task.o(.ARM.exidx.text.Task_switch_handler), (8 bytes).
+    Removing task.o(.ARM.exidx.text.Task_exec_handler), (8 bytes).
+    Removing task.o(.text.Task_get_task_id), (104 bytes).
+    Removing task.o(.ARM.exidx.text.Task_get_task_id), (8 bytes).
+    Removing task.o(.text.Task_get_task_state), (24 bytes).
+    Removing task.o(.ARM.exidx.text.Task_get_task_state), (8 bytes).
+    Removing task.o(.text.Task_suspend), (32 bytes).
+    Removing task.o(.ARM.exidx.text.Task_suspend), (8 bytes).
+    Removing task.o(.text.Task_resume), (28 bytes).
+    Removing task.o(.ARM.exidx.text.Task_resume), (8 bytes).
+    Removing task_timer.o(.text), (0 bytes).
+    Removing task_timer.o(.text.Btim1_Init), (84 bytes).
+    Removing task_timer.o(.ARM.exidx.text.Btim1_Init), (8 bytes).
+    Removing task_timer.o(.ARM.exidx.text.Task_timer_init), (8 bytes).
+    Removing task_timer.o(.ARM.exidx.text.on_btim1_callback), (8 bytes).
+    Removing app_oled_menu.o(.text), (0 bytes).
+    Removing app_oled_menu.o(.ARM.exidx.text.EC12_on_changed), (8 bytes).
+    Removing app_oled_menu.o(.text.handle_menu_key_down), (128 bytes).
+    Removing app_oled_menu.o(.ARM.exidx.text.handle_menu_key_down), (8 bytes).
+    Removing app_oled_menu.o(.ARM.exidx.text.Keys_on_key_down), (8 bytes).
+    Removing app_oled_menu.o(.ARM.exidx.text.Keys_on_key_up), (8 bytes).
+    Removing app_oled_menu.o(.ARM.exidx.text.App_OLED_Menu_init), (8 bytes).
+    Removing app_oled_menu.o(.ARM.exidx.text.App_OLED_Menu_keys), (8 bytes).
+    Removing app_oled_menu.o(.ARM.exidx.text.handle_node_level), (8 bytes).
+    Removing app_oled_menu.o(.ARM.exidx.text.App_OLED_Menu_screen), (8 bytes).
+    Removing app_pid_control.o(.text), (0 bytes).
+    Removing app_pid_control.o(.ARM.exidx.text.App_PID_Control_init), (8 bytes).
+    Removing app_pid_control.o(.ARM.exidx.text.App_PID_Control_task), (8 bytes).
+    Removing app_data_transfer.o(.text), (0 bytes).
+    Removing app_data_transfer.o(.ARM.exidx.text.App_Data_Transfer_init), (8 bytes).
+    Removing app_data_transfer.o(.ARM.exidx.text.App_Data_Transfer_task), (8 bytes).
+    Removing app_adc.o(.text), (0 bytes).
+    Removing app_adc.o(.ARM.exidx.text.on_btim2_callback), (8 bytes).
+    Removing app_adc.o(.text.Btim2_Init), (84 bytes).
+    Removing app_adc.o(.ARM.exidx.text.Btim2_Init), (8 bytes).
+    Removing app_adc.o(.text.App_ADC_init), (88 bytes).
+    Removing app_adc.o(.ARM.exidx.text.App_ADC_init), (8 bytes).
+    Removing app_adc.o(.text.App_ADC_task), (24 bytes).
+    Removing app_adc.o(.ARM.exidx.text.App_ADC_task), (8 bytes).
+    Removing fcmplt.o(.text), (28 bytes).
+    Removing dcmpgt.o(.text), (44 bytes).
+
+929 unused section(s) (total 21670 bytes) removed from the image.
